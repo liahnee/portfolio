@@ -17,21 +17,24 @@ const navItems = [
 	// { path: '/contact', icon: 'mail outline', text: 'Contact' }
 ];
 
-const isMobile = () => {
-	if (window.matchMedia('(max-width: 800px)').matches) {
-		return true;
-	} else {
-		return false;
-	}
-};
+
 
 export default function App() {
 	const [ visible, setVisible ] = useState(false);
 	const [ activeItem, setActiveItem ] = useState(window.location.pathname);
+	const [ isMobile, setIsMobile ] = useState(false)
+
+	useEffect(() => {
+		if (window.matchMedia('(max-width: 800px)').matches) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
+	})
 
 	return (
 		<div className="app">
-			{isMobile() ? (
+			{isMobile ? (
 				<Sidebar.Pushable as={Segment}>
 					<Sidebar
 						as={Menu}

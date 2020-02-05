@@ -8,6 +8,7 @@ import Blog from './containers/blog';
 
 class Routes extends React.Component {
 	render() {
+		console.log("in routes", this.props.isMobile)
 		return (
 			<React.Fragment>
 				<Switch>
