@@ -8,7 +8,9 @@ html, body {
         background-color: rgba(16, 165, 224, 0.836) !important;
     }
     #stickyBtn {
-        position: sticky;
+        position: absolute;
+        top: 15px; 
+        left: 15px;
     }
 }
 

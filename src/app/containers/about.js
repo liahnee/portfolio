@@ -42,7 +42,8 @@ export default (props) => {
 				{imagesSecondRow.map((item, idx) => (
 						<div>
 							<Grid.Column key={idx} style={{padding: '10px'}}>
-										{item.text}
+								<br />
+								<p style={{padding: ' 25px 0 10px 0'}}>{item.text}</p>	
 							</Grid.Column>
 						</div>
 					))}

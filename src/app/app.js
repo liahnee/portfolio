@@ -12,17 +12,15 @@ import BottomDiv from './components/bottomDiv';
 const navItems = [
 	{ path: '/home', icon: 'gamepad', text: 'Home' },
 	{ path: '/about', icon: 'user outline', text: 'About' },
-	{ path: '/projects', icon: 'github alternate', text: 'Projects' },
+	{ path: '/projects', icon: 'github alternate', text: 'Projects' }
 	// { path: '/blogs', icon: 'pencil alternate', text: 'Blogs' },
 	// { path: '/contact', icon: 'mail outline', text: 'Contact' }
 ];
 
-
-
 export default function App() {
 	const [ visible, setVisible ] = useState(false);
 	const [ activeItem, setActiveItem ] = useState(window.location.pathname);
-	const [ isMobile, setIsMobile ] = useState(false)
+	const [ isMobile, setIsMobile ] = useState(false);
 
 	useEffect(() => {
 		if (window.matchMedia('(max-width: 800px)').matches) {
@@ -30,12 +28,12 @@ export default function App() {
 		} else {
 			setIsMobile(false);
 		}
-	})
+	});
 
 	return (
 		<div className="app">
 			{isMobile ? (
-				<Sidebar.Pushable as={Segment}>
+				<Sidebar.Pushable>
 					<Sidebar
 						as={Menu}
 						animation="overlay"
@@ -48,7 +46,7 @@ export default function App() {
 						id="bar"
 					>
 						{navItems.map((item, idx) => (
-							<Menu.Item as={Link} to={item.path} key={idx} >
+							<Menu.Item as={Link} to={item.path} key={idx}>
 								<Icon name={item.icon} />
 								{item.text}
 							</Menu.Item>
@@ -56,20 +54,18 @@ export default function App() {
 					</Sidebar>
 
 					<Sidebar.Pusher dimmed={visible} id="pusher">
-						<Segment basic>
-							<Button circular icon="sidebar" onClick={() => setVisible(true)} id="stickyBtn"/>
+						<Button circular icon="sidebar" onClick={() => setVisible(true)} id="stickyBtn" />
 
-							<Routes isMobile={isMobile}/>
-						</Segment>
+						<Routes isMobile={isMobile} />
 					</Sidebar.Pusher>
 				</Sidebar.Pushable>
 			) : (
 				<div>
 					<DesktopMenu navItems={navItems} activeItem={activeItem} setActiveItem={setActiveItem} />
-					<Routes isMobile={isMobile}/>
+					<Routes isMobile={isMobile} />
 				</div>
 			)}
-			<BottomDiv activeItem={activeItem}/>
+			<BottomDiv activeItem={activeItem} />
 		</div>
 	);
 }
