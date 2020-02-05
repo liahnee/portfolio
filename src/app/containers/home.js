@@ -8,23 +8,27 @@ export default (props) => {
 	return (
 		<div className="home" style={{ maxWidth: '80vw', marginLeft: 'auto', marginRight: 'auto' }}>
 			<Container textAlign="center">
-				<Image circular size="medium" src={ProfilePic} />
+				<Image circular floated='left' size="medium" src={ProfilePic} />
 				{props.isMobile ? (
-					<div style={{paddingTop: '10%'}}>
+					<div style={{ paddingTop: '10%' }}>
 						{/* <Header textAlign="left" style={{ paddingTop: '10%', paddingLeft: '350px' }}> */}
-							
-							Hello, I'm Catherine Yang.
+						Hello, I'm Catherine Yang.
 						{/* </Header> */}
-						</div>
+					</div>
 				) : (
-					<span>
-						<Header textAlign="left" style={{ paddingTop: '10%', paddingLeft: '350px' }}>
-							{' '}
-							Hello, I'm Catherine Yang.{' '}
-							this is not mobile
-						</Header>
+					<>
 
-					</span>
+						<Header textAlign="left" style={{ paddingTop: '10%', paddingLeft: '350px',fontFamily: "'Acme', sans-serif", fontSize: '80px' }}>
+							Hello, <br/>
+							I'm Catherine Yang.
+						</Header>
+						
+						<p style={{fontFamily: "'Permanent Marker', cursive", fontSize: '40px'}}>
+						I enjoy being creative with Javascript and oil paints. <br />
+						(Separetely!)
+						</p>
+						</>
+					
 				)}
 			</Container>
 		</div>

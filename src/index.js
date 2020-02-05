@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './app/app';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
+// import './assets/fonts/BebasNeue/BebasNeue-Bold.ttf';
 
 ReactDOM.render(
 	<Router>

@@ -1,3 +1,21 @@
 .projects {
     min-height: 80vh;
+    max-width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Patua One', cursive;
+}
+
+
+.contentBox {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+.contentBox::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(53, 53, 194);
 }

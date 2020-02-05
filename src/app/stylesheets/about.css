@@ -1,5 +1,8 @@
 .about {
     min-height: 80vh;
+    color: white;
+    font-family: 'Merienda', cursive;;
+    font-size: 40px;
 }
 
 .about-image {

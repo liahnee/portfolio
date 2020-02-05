@@ -20,14 +20,14 @@ const imagesSecondRow = [ { bgImage: ImgShells, text: 'Now I code and paint.', a
 export default (props) => {
 	return (
 		<div className="about">
-			<Grid columns={3} centered stackable style={{ width: '80vw', justifyContent:'center', background: 'white', marginTop: '0', marginLeft: 'auto', marginRight: 'auto' }}>
-				<Grid.Row >
+			<Grid columns={3} centered stackable style={{ minHeight: '80vh', justifyContent:'center', background: 'white', marginTop: '0', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'black'}}>
+				<Grid.Row style={{marginTop: '80px'}}>
 					{imagesFirstRow.map((item, idx) => (
 						<div>
 							<Grid.Column key={idx} style={{padding: '10px'}}>
 								<Reveal animated={item.animated}>
 									<Reveal.Content visible className='about-card-front'>
-										<Header className='about-card-text'>{item.text} </Header>
+										<p style={{fontSize: '20px', marginTop: '45%', marginBottom: ''}}>{item.text}</p>
 									</Reveal.Content>
 									<Reveal.Content hidden className='about-card-back'>
 										<Image circular src={item.bgImage}  size="medium" />
@@ -42,7 +42,7 @@ export default (props) => {
 				{imagesSecondRow.map((item, idx) => (
 						<div>
 							<Grid.Column key={idx} style={{padding: '10px'}}>
-										<Header >{item.text} </Header>
+										{item.text}
 							</Grid.Column>
 						</div>
 					))}
