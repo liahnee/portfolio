@@ -69,7 +69,7 @@ export default (props) => {
 
 	return (
 		<div className="projects">
-			<Header> Currently in process of deploying old projects </Header>
+			<Header> Currently in process of deploying past projects </Header><br /><br />
 			<Grid columns={3} centered stackable divided className="projectGrid">
 					{gridRowMap(projects)}
 			</Grid>
