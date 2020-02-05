@@ -1,0 +1,39 @@
+.about {
+    min-height: 80vh;
+}
+
+.about-image {
+    position: absolue;
+    opacity: 0.2;
+    filter: grayscale(100%);
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.about-image:hover {
+    filter: none;
+    opacity: 100%;
+}
+
+.about-card-front {
+    min-width: 300px;
+    min-height: 300px;
+    margin: 0 !important;
+    background-color: rgba(0, 0, 0, 0.80) ;
+    border-radius: 49.5%;
+    border-color: white;
+    border-width: 10px;
+    justify-content: center;
+    right: -10px;
+}
+.about-card-back {
+    min-width: 300px;
+    min-height: 300px;
+    margin-top: 0;
+
+}
+
+.about-card-text {
+    color: white !important;
+    margin-top: 45% !important; 
+    margin-bottom: 0 !important;
+}

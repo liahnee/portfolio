@@ -1,38 +1,48 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import '../stylesheets/projects.css'
 
+import { Grid } from 'semantic-ui-react';
+import ProjectCard from '../components/projectCard';
 
-const useStyles = makeStyles(theme => ({
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      height: 140,
-      width: 100,
-    },
-    control: {
-      padding: theme.spacing(2),
-    },
-  }));
+const projects = [
+	{
+		image: '',
+		title: 'Web Health Record',
+		skills: 'React, Redux, Rails, JWT',
+		description: '',
+		github: '',
+		live: ''
+	}
+];
 
 export default (props) => {
-    const classes = useStyles();
+	// const handleChange = () => {
+	// 	// anchor
+	// };
 
-    const handleChange = () => {
-        // anchor 
-    }
+	const gridRowMap = (projects) => {
+		let row = [];
+		projects.map((item, idx) => {
+			if (idx % 3 === 0) {
+				row.push(
+					<Grid.Row>
+						<Grid.Column>
+							<ProjectCard item={projects[idx]} />
+						</Grid.Column>
+						{projects[idx + 1] ? <Grid.Column><ProjectCard item={projects[idx + 1]} /></Grid.Column> : null}
+						{projects[idx + 2] ? <Grid.Column><ProjectCard item={projects[idx + 2]} /> </Grid.Column>: null}
+					</Grid.Row>
+				);
+			}
+		});
+		return row;
+	};
 
-    return (
-        <React.Fragment>
-            <Grid container className={classes.root} spacing={2}>
-                <Grid item>
-                    list of projects, sticky, anchor
-                </Grid>
-                <Grid item>
-                    map items with summary components 
-                </Grid>
-            </Grid>
-        </React.Fragment>
-    )
+	return (
+		<div className="projects">
+			<Grid columns={3} centered stackable divided className="projectGrid">
+					{gridRowMap(projects)}
+			</Grid>
+		</div>
+	);
 };

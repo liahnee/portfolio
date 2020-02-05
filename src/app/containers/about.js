@@ -1,0 +1,54 @@
+import React from 'react';
+import '../stylesheets/about.css';
+
+import { Header, Image, Grid, Reveal } from 'semantic-ui-react';
+
+import ImgDrawing from '../assets/sq1.png';
+import ImgShells from '../assets/sq2.jpg';
+// import ImgHanbok from '../assets/sq3.jpg';
+import ImgClass from '../assets/sq4.1.jpg';
+
+const imagesFirstRow = [
+	{ bgImage: ImgDrawing, text: 'I use to draw,', animated: 'move up' },
+	{ bgImage: ImgShells, text: 'paint,', animated: 'move' },
+	{ bgImage: ImgClass, text: 'and teach.', animated: 'move down' }
+];
+const imagesSecondRow = [ { bgImage: ImgShells, text: 'Now I code and paint.', animated: 'fade' } ];
+
+
+
+export default (props) => {
+	return (
+		<div className="about">
+			<Grid columns={3} centered stackable style={{ width: '80vw', justifyContent:'center', background: 'white', marginTop: '0', marginLeft: 'auto', marginRight: 'auto' }}>
+				<Grid.Row >
+					{imagesFirstRow.map((item, idx) => (
+						<div>
+							<Grid.Column key={idx} style={{padding: '10px'}}>
+								<Reveal animated={item.animated}>
+									<Reveal.Content visible className='about-card-front'>
+										<Header className='about-card-text'>{item.text} </Header>
+									</Reveal.Content>
+									<Reveal.Content hidden className='about-card-back'>
+										<Image circular src={item.bgImage}  size="medium" />
+									</Reveal.Content>
+								</Reveal>
+								
+							</Grid.Column>
+						</div>
+					))}
+				</Grid.Row>
+				<Grid.Row>
+				{imagesSecondRow.map((item, idx) => (
+						<div>
+							<Grid.Column key={idx} style={{padding: '10px'}}>
+										<Header >{item.text} </Header>
+							</Grid.Column>
+						</div>
+					))}
+				</Grid.Row>
+				<Grid.Row />
+			</Grid>
+		</div>
+	);
+};

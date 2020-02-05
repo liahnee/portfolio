@@ -1,0 +1,7 @@
+.ui.menu {
+    border-bottom: none !important;
+}
+
+.menuBar {
+    min-height: 20vh;
+}
