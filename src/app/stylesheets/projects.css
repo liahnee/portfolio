@@ -6,12 +6,11 @@
     font-family: 'Patua One', cursive;
 }
 
-
 .contentBox {
     -ms-overflow-style: none;
     scrollbar-width: none;
-
 }
+
 .contentBox::-webkit-scrollbar {
     display: none;
 }
