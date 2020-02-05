@@ -4,11 +4,3 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
-.home::-webkit-scrollbar {
-    display: none;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(53, 53, 194);
-}
