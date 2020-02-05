@@ -15,6 +15,6 @@
     display: none;
 }
 
-::-webkit-scrollbar-thumb {
+.contentBox::-webkit-scrollbar-thumb {
     background: rgb(53, 53, 194);
 }
