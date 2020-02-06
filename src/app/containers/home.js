@@ -16,7 +16,7 @@ export default (props) => {
 	});
 	return (
 		<div className="home" style={{ maxWidth: '80vw', marginLeft: 'auto', marginRight: 'auto' }}>
-			<Container textAlign="center" style={{marginTop: '50px'}}>
+			<Container textAlign="center" style={{marginTop: '80px'}}>
 				{isMobile ? (
 					<React.Fragment>
 						<Image circular size="medium" src={ProfilePic} />
