@@ -29,7 +29,7 @@ export default function App() {
 			setIsMobile(false);
 		}
 	});
-	handleMobileMenu = (path) => {
+	const handleMobileMenu = (path) => {
 		setActiveItem(path)
 	}
 
