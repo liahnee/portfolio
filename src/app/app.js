@@ -49,7 +49,7 @@ export default function App() {
 						id="bar"
 					>
 						{navItems.map((item, idx) => (
-							<Menu.Item as={Link} to={item.path} key={idx} onClick={handleMobileMenu(item.path)}>
+							<Menu.Item as={Link} to={item.path} key={idx} onClick={() => handleMobileMenu(item.path)}>
 								<Icon name={item.icon} />
 								{item.text}
 							</Menu.Item>
