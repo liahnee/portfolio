@@ -58,17 +58,18 @@ export default function App() {
 
 					<Sidebar.Pusher dimmed={visible} id="pusher">
 						<Button circular icon="sidebar" onClick={() => setVisible(true)} id="stickyBtn" />
-
 						<Routes isMobile={isMobile} />
+						<BottomDiv activeItem={activeItem} />
 					</Sidebar.Pusher>
 				</Sidebar.Pushable>
 			) : (
 				<div>
 					<DesktopMenu navItems={navItems} activeItem={activeItem} setActiveItem={setActiveItem} />
 					<Routes isMobile={isMobile} />
+					<BottomDiv activeItem={activeItem} />
 				</div>
 			)}
-			<BottomDiv activeItem={activeItem} />
+			
 		</div>
 	);
 }
