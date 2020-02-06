@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    overflow:auto;
+    overflow: auto;
 }
 
 @media only screen and (max-width: 760px) {
@@ -13,7 +13,7 @@ html, body {
         left: 15px;
     }
 }
-
+/* 
 .app {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -27,12 +27,11 @@ html, body {
 
 .app::-webkit-scrollbar-thumb {
     background: rgb(53, 53, 194);
-}
+} */
 
 
 #pusher {
     min-height: 100vh;
-    overflow:scroll;
 }
 
 .menuBar {

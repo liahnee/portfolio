@@ -11,7 +11,7 @@ export default (props) => {
 	return (
 		<Card style={{ marginLeft: 'auto', marginRight: 'auto' }}>
             <Image src={props.item.image} wrapped ui={false}/>
-			<Card.Content className='contentBox' style={{minHeight: '200px', overflowY: 'scroll', paddingRight: '-17px'}}>
+			<Card.Content className='contentBox' style={{minHeight: '200px', paddingRight: '-17px'}}>
 				
 				<Card.Header>{props.item.title}</Card.Header>
 				<Card.Meta>{props.item.skills}</Card.Meta>

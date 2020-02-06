@@ -6,12 +6,13 @@ import BlackBottom from '../assets/b1blckbot.png';
 import BlackTop from '../assets/b1blacktop.png';
 
 export default (props) => {
+
 	return (
 		<React.Fragment>
 			<div
 				className="BWdivider"
 				style={{
-					backgroundImage: `url(${window.location.pathname === '/about' ? BlackTop : BlackBottom})`,
+					backgroundImage: `url(${props.activeItem === '/about' ? BlackTop : BlackBottom})`,
 					backgroundSize: 'cover',
 					backgroundRepeat: 'no-repeat',
 					minHeight: '200px'
@@ -19,7 +20,7 @@ export default (props) => {
 			/>
 			<div
 				className="bottom"
-				style={{ backgroundColor: `${window.location.pathname === '/about' ? 'white' : 'black'}`, minHeight: '120px' }}
+				style={{ backgroundColor: `${props.activeItem === '/about' ? 'white' : 'black'}`, minHeight: '120px' }}
 			>
 				<div style={{ marginLeft: 'auto', marginRight: 'auto', paddingTop: '60px', width: '120px' }}>
 					<Button
