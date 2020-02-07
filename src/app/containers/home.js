@@ -53,7 +53,7 @@ export default (props) => {
 
 						<p style={{ fontFamily: "'Permanent Marker', cursive", fontSize: '40px' }}>
 							I enjoy being creative with Javascript and oil paints. <br />
-							(Separetely!)
+							(Separately!)
 						</p>
 					</React.Fragment>
 				)}

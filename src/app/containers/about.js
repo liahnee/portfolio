@@ -9,7 +9,7 @@ import ImgShells from '../assets/sq2.jpg';
 import ImgClass from '../assets/sq4.1.jpg';
 
 const imagesFirstRow = [
-	{ bgImage: ImgDrawing, text: 'I use to draw,', animated: 'move up' },
+	{ bgImage: ImgDrawing, text: 'I used to draw,', animated: 'move up' },
 	{ bgImage: ImgShells, text: 'paint,', animated: 'move' },
 	{ bgImage: ImgClass, text: 'and teach.', animated: 'move down' }
 ];
