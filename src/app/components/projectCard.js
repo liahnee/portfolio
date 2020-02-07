@@ -25,9 +25,9 @@ export default (props) => {
 						</Button>
 					</a>
 
-					<Button disabled basic color="teal" content="Teal">
+					{/* <Button disabled basic color="teal" content="Teal">
 						<Icon name="world" />Live Demo
-					</Button>
+					</Button> */}
 				</div>
 			</Card.Content>
 		</Card>
