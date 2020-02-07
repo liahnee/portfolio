@@ -23,7 +23,7 @@ const projects = [
 		title: 'Adopt a Child',
 		skills: 'Ruby, Rails, SQL ',
 		description: "This is a game app where a user can adopt a child of random stats and gender. Users can create a schedule for the child and how each schedule affected child's status to figure out their characteristics.",
-		github: '',
+		github: 'https://github.com/liahnee/child_rails_mod2',
 		live: ''
 	},
 	{
@@ -39,7 +39,7 @@ const projects = [
 		title: 'Sentimental Tweet',
 		skills: 'React, Redux, Rails, JWT',
 		description: 'This app calls on Tweeter API and runs sentiment API on their most recent tweets. Users can login to create favorites and observe trends on their Tweet sentiment.',
-		github: '',
+		github: 'https://github.com/liahnee/sentimentTweet',
 		live: ''
 	},
 ];
