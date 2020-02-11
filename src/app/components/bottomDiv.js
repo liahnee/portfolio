@@ -1,18 +1,13 @@
 import React from 'react';
 
-import { Button, Icon } from 'semantic-ui-react';
-
-import BlackBottom from '../assets/b1blckbot.png';
-import BlackTop from '../assets/b1blacktop.png';
-
-export default (props) => {
+export default () => {
 
 	return (
 		<React.Fragment>
 			<div
 				className="BWdivider"
 				style={{
-					backgroundImage: `url(${props.activeItem === '/about' ? BlackTop : BlackBottom})`,
+					// backgroundImage: `url(${BlackBottom})`,
 					backgroundSize: 'cover',
 					backgroundRepeat: 'no-repeat',
 					minHeight: '200px'
@@ -20,10 +15,10 @@ export default (props) => {
 			/>
 			<div
 				className="bottom"
-				style={{ backgroundColor: `${props.activeItem === '/about' ? 'white' : 'black'}`, minHeight: '120px' }}
+				style={{ backgroundColor: 'black', minHeight: '120px' }}
 			>
 				<div style={{ marginLeft: 'auto', marginRight: 'auto', paddingTop: '60px', width: '120px' }}>
-					<Button
+					{/* <Button
 						as="a"
 						href="https://www.linkedin.com/in/catherine-yang-0ab40b3a/"
 						target="_blank"
@@ -31,7 +26,7 @@ export default (props) => {
 						style={{ margin: '0' }}
 					>
 						<Icon name="linkedin" /> LinkedIn
-					</Button>
+					</Button> */}
 				</div>
 			</div>
 		</React.Fragment>

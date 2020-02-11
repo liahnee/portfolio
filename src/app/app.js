@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './stylesheets/app.css';
 
-import { Menu, Icon, Image, Segment, Sidebar, Button } from 'semantic-ui-react';
+import { Menu, Icon, Sidebar, Button } from 'semantic-ui-react';
 
-import Routes from './routes';
 import DesktopMenu from './components/desktopMenu';
+import Home from './containers/home';
+import About from './containers/about';
+import Projects from './containers/projects';
 
 import BottomDiv from './components/bottomDiv';
 
 const navItems = [
-	{ path: '/home', icon: 'gamepad', text: 'Home' },
-	{ path: '/about', icon: 'user outline', text: 'About' },
-	{ path: '/projects', icon: 'github alternate', text: 'Projects' }
-	// { path: '/blogs', icon: 'pencil alternate', text: 'Blogs' },
-	// { path: '/contact', icon: 'mail outline', text: 'Contact' }
+	{ path: 'https://drive.google.com/file/d/12ybEM-bOMxlBCbCgY3kgJbXfaGAuc8jp/view?usp=sharing', icon: 'file outline', text: 'Resume' },
+	{ path: 'https://github.com/liahnee', icon: 'github alternate', text: 'Github' },
+	{ path: 'https://www.linkedin.com/in/catherine-yang-0ab40b3a/', icon: 'linkedin', text: 'LinkedIn' },
+	// { path: '/contact', icon: 'envelope outline', text: 'Contact' },
 ];
 
 export default function App() {
 	const [ visible, setVisible ] = useState(false);
-	const [ activeItem, setActiveItem ] = useState(window.location.pathname);
 	const [ isMobile, setIsMobile ] = useState(false);
 
 	useEffect(() => {
@@ -28,9 +27,9 @@ export default function App() {
 		} else {
 			setIsMobile(false);
 		}
-	});
-	const handleMobileMenu = (path) => {
-		setActiveItem(path)
+	}, []);
+	const handleMobileMenu = (text) => {
+		setVisible(false);
 	}
 
 	return (
@@ -49,25 +48,31 @@ export default function App() {
 						id="bar"
 					>
 						{navItems.map((item, idx) => (
-							<Menu.Item as={Link} to={item.path} key={idx} onClick={() => handleMobileMenu(item.path)}>
-								<Icon name={item.icon} />
-								{item.text}
-							</Menu.Item>
+							<a href={item.path} target="_blank" rel="noopener noreferrer" key={idx}> 
+								<Menu.Item onClick={() => handleMobileMenu(item.text)}>
+									<Icon name={item.icon} />
+									{item.text}
+								</Menu.Item>
+							</a>
 						))}
 					</Sidebar>
 
 					<Sidebar.Pusher dimmed={visible} id="pusher">
 						<Button circular icon="sidebar" onClick={() => setVisible(true)} id="stickyBtn" />
-						<Routes isMobile={isMobile} />
-						<BottomDiv activeItem={activeItem} />
+						<Home />
+						<About />
+						<Projects />
+						<BottomDiv />
 					</Sidebar.Pusher>
 				</Sidebar.Pushable>
 			) : (
-				<div>
-					<DesktopMenu navItems={navItems} activeItem={activeItem} setActiveItem={setActiveItem} />
-					<Routes isMobile={isMobile} />
-					<BottomDiv activeItem={activeItem} />
-				</div>
+				<React.Fragment>
+					<DesktopMenu navItems={navItems} />
+					<Home />
+					<About />
+					<Projects />
+					<BottomDiv />
+				</React.Fragment>
 			)}
 			
 		</div>

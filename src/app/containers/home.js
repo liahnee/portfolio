@@ -13,10 +13,10 @@ export default (props) => {
 		} else {
 			setIsMobile(false);
 		}
-	});
+	}, []);
 	return (
 		<div className="home" style={{ maxWidth: '80vw', marginLeft: 'auto', marginRight: 'auto' }}>
-			<Container textAlign="center" style={{marginTop: '80px'}}>
+			<Container textAlign="center" style={{marginTop: '80px', marginBottom: '20vh'}}>
 				{isMobile ? (
 					<React.Fragment>
 						<Image circular size="medium" src={ProfilePic} />
@@ -24,13 +24,13 @@ export default (props) => {
 							textAlign="left"
 							style={{
 								paddingTop: '10%',
-								fontFamily: "'Acme', sans-serif",
+								fontFamily:  "'Patua One', cursive",
 								fontSize: '40px'
 							}}
 						>
 							Hello, I'm <br /> Catherine Yang.< br/>
 						</Header>
-						<p style={{ textAlign:'left', fontFamily: "'Permanent Marker', cursive", fontSize: '30px', paddingTop: '30px' }}>
+						<p style={{ textAlign:'left', fontFamily: "'Merienda', cursive", fontSize: '30px', paddingTop: '30px' }}>
 							I enjoy being creative with Javascript and oil paints. <br />
 							(Separetely!)
 						</p>
@@ -43,7 +43,7 @@ export default (props) => {
 							style={{
 								paddingTop: '10%',
 								paddingLeft: '350px',
-								fontFamily: "'Acme', sans-serif",
+								fontFamily: "'Patua One', cursive",
 								fontSize: '80px'
 							}}
 						>
@@ -51,7 +51,7 @@ export default (props) => {
 							I'm Catherine Yang.
 						</Header>
 
-						<p style={{ fontFamily: "'Permanent Marker', cursive", fontSize: '40px' }}>
+						<p style={{ fontFamily: "'Merienda', cursive", fontSize: '40px'}}>
 							I enjoy being creative with Javascript and oil paints. <br />
 							(Separately!)
 						</p>

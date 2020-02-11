@@ -1,7 +1,10 @@
 import React from 'react';
 import '../stylesheets/about.css';
 
-import { Header, Image, Grid, Reveal } from 'semantic-ui-react';
+import { Image, Grid, Reveal } from 'semantic-ui-react';
+
+import BlackBottom from '../assets/bBotCurve.png';
+import BlackTop from '../assets/bTopCurve.png';
 
 import ImgDrawing from '../assets/sq1.png';
 import ImgShells from '../assets/sq2.jpg';
@@ -15,41 +18,73 @@ const imagesFirstRow = [
 ];
 const imagesSecondRow = [ { bgImage: ImgShells, text: 'Now I code and paint.', animated: 'fade' } ];
 
-
-
-export default (props) => {
+export default () => {
 	return (
 		<div className="about">
-			<Grid columns={3} centered stackable style={{ minHeight: '80vh', justifyContent:'center', background: 'white', marginTop: '0', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'black'}}>
-				<Grid.Row style={{marginTop: '80px'}}>
+			<div
+				className="BWdivider"
+				style={{
+					backgroundImage: `url(${BlackBottom})`,
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat',
+					minHeight: '200px',
+					minWidth: '100%'
+				}}
+			/>
+			<Grid
+				columns={3}
+				centered
+				stackable
+				style={{
+					minHeight: '100vh',
+					justifyContent: 'center',
+					background: 'white',
+					marginTop: '0',
+					marginLeft: 'auto',
+					marginRight: 'auto',
+					backgroundColor: 'black'
+				}}
+			>
+				<Grid.Row style={{ marginTop: '20vh' }}>
 					{imagesFirstRow.map((item, idx) => (
-						<div>
-							<Grid.Column key={idx} style={{padding: '10px'}}>
+						<div key={idx} >
+							<Grid.Column style={{ padding: '10px' }}>
 								<Reveal animated={item.animated}>
-									<Reveal.Content visible className='about-card-front'>
-										<p style={{fontSize: '20px', marginTop: '45%', marginBottom: ''}}>{item.text}</p>
+									<Reveal.Content visible className="about-card-front">
+										<p style={{ fontSize: '30px', marginTop: '45%', marginBottom: '' }}>
+											{item.text}
+										</p>
 									</Reveal.Content>
-									<Reveal.Content hidden className='about-card-back'>
-										<Image circular src={item.bgImage}  size="medium" />
+									<Reveal.Content hidden className="about-card-back">
+										<Image circular src={item.bgImage} size="medium" />
 									</Reveal.Content>
 								</Reveal>
-								
 							</Grid.Column>
 						</div>
 					))}
 				</Grid.Row>
 				<Grid.Row>
-				{imagesSecondRow.map((item, idx) => (
-						<div>
-							<Grid.Column key={idx} style={{padding: '10px'}}>
+					{imagesSecondRow.map((item, idx) => (
+						<div key={idx}>
+							<Grid.Column style={{ padding: '20vh' }}>
 								<br />
-								<p style={{padding: ' 25px 0 10px 0'}}>{item.text}</p>	
+								<p style={{ padding: ' 15px 0 10vh 0' }}>{item.text}</p>
 							</Grid.Column>
 						</div>
 					))}
 				</Grid.Row>
 				<Grid.Row />
 			</Grid>
+			<div
+				className="BWdivider"
+				style={{
+					backgroundImage: `url(${BlackTop})`,
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat',
+					minHeight: '200px',
+					minWidth: '100%'
+				}}
+			/>
 		</div>
 	);
 };

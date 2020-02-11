@@ -1,14 +1,5 @@
 .home {
-    background-image: url('../assets/bg1.png');
+    /* background-image: url('../assets/bg1.png'); */
     min-height: 80vh;
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
+    margin-top: 20vh;
 }
-/* 
-.home::-webkit-scrollbar {
-    display: none;
-}
-
-.home::-webkit-scrollbar-thumb {
-    background: rgb(53, 53, 194);
-} */

@@ -2,6 +2,22 @@
     border-bottom: none !important;
 }
 
+.ui.secondary.vertical.labeled.icon.menu.menu {
+    margin-top: 55vh;
+
+}
+
 .menuBar {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    /* text-shadow: 2px -200px white; */
     min-height: 80px;
+    position: absolute;
+    top: 10px;
+    width: 90vw;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5 !important;
 }

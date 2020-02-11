@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Image } from 'semantic-ui-react';
+import { Menu, Image, Icon } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 import '../stylesheets/menuBar.css';
@@ -7,30 +7,32 @@ import '../stylesheets/menuBar.css';
 export default (props) => {
 	const [ redirect, setRedirect ] = useState(false);
 
-	function handleClick(path) {
-		props.setActiveItem(path);
+	function handleHome() {
 		setRedirect(true);
 	}
-	// debugger
 	return (
-		<div className="menuBar" style={{ marginBottom: '12px' }}>
-			{redirect ? <Redirect to={props.activeItem} /> : null}
-			<Menu pointing secondary>
-				<Menu.Item onClick={() => handleClick('/home')}>
-					<Image src={Logo} size="mini" />
-				</Menu.Item>
-				<Menu.Menu position="right">
-					
-					{props.navItems.map((item) => (
-						<Menu.Item
-							key={item.text}
-							name={item.text}
-							active={props.activeItem === item.path}
-							onClick={() => handleClick(item.path)}
+		<React.Fragment>
+			{redirect ? <Redirect to={'/home'} /> : null}
+
+			<div className="menuBar">
+				<Menu secondary className="menu">
+					<Menu.Item onClick={() => handleHome()}>
+						<Image
+							src={Logo}
+							size="mini"
+							// style={{ marginTop: '5vh', marginLeft: '30px' }}
 						/>
-					))}
-				</Menu.Menu>
-			</Menu>
-		</div>
+					</Menu.Item>
+					<Menu.Menu position="right">
+						{props.navItems.map((item, idx) => (
+							<Menu.Item href={item.path} target="_blank" rel="noopener noreferrer" key={idx}>
+								<Icon name={item.icon} />
+								{item.text}
+							</Menu.Item>
+						))}
+					</Menu.Menu>
+				</Menu>
+			</div>
+		</React.Fragment>
 	);
-}
+};

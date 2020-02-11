@@ -51,10 +51,10 @@ export default (props) => {
 
 	const gridRowMap = (proj) => {
 		let row = [];
-		proj.map((item, idx) => {
+		proj.forEach((item, idx) => {
 			if (idx % 3 === 0) {
 				row.push(
-					<Grid.Row>
+					<Grid.Row key={idx}>
 						<Grid.Column>
 							<ProjectCard item={proj[idx]} />
 						</Grid.Column>
@@ -69,7 +69,7 @@ export default (props) => {
 
 	return (
 		<div className="projects">
-			<Header style={{marginTop: '80px'}}> Currently in process of deploying past projects </Header><br /><br />
+			<Header style={{marginTop: '80px'}}>  </Header><br /><br />
 			<Grid columns={3} centered stackable divided className="projectGrid">
 					{gridRowMap(projects)}
 			</Grid>

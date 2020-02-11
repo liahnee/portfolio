@@ -1,11 +1,16 @@
 html, body {
     height: 100%;
+    width: 100vw;
     overflow: auto;
+}
+
+.app {
+    width: 100vw;
 }
 
 @media only screen and (max-width: 760px) {
     #bar {
-        background-color: rgba(16, 165, 224, 0.836) !important;
+        background-color: rgba(0, 0, 0, 0.637) !important;
     }
     #stickyBtn {
         position: absolute;
@@ -13,34 +18,11 @@ html, body {
         left: 15px;
     }
 }
-/* 
-.app {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow:auto;
-}
-
-
-.app::-webkit-scrollbar {
-    display: none;
-}
-
-.app::-webkit-scrollbar-thumb {
-    background: rgb(53, 53, 194);
-} */
-
 
 #pusher {
     min-height: 100vh;
 }
 
-.menuBar {
-    flex: content;
-    max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
 
 .bottom {
     bottom: 0; 
