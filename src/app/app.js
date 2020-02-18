@@ -58,7 +58,7 @@ export default function App() {
 					</Sidebar>
 
 					<Sidebar.Pusher dimmed={visible} id="pusher">
-						<Button circular icon="sidebar" onClick={() => setVisible(true)} id="stickyBtn" />
+						<Button circular icon="user outline" onClick={() => setVisible(true)} id="stickyBtn" />
 						<Home />
 						<About />
 						<Projects />

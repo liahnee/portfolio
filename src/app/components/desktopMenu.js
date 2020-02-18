@@ -25,7 +25,7 @@ export default (props) => {
 					</Menu.Item>
 					<Menu.Menu position="right">
 						{props.navItems.map((item, idx) => (
-							<Menu.Item href={item.path} target="_blank" rel="noopener noreferrer" key={idx}>
+							<Menu.Item className="menuItem"  href={item.path} target="_blank" rel="noopener noreferrer" key={idx}>
 								<Icon name={item.icon} />
 								{item.text}
 							</Menu.Item>

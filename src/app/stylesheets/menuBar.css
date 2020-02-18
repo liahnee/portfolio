@@ -21,3 +21,7 @@
     margin-right: auto;
     z-index: 5 !important;
 }
+
+.menuItem:hover {
+    color: rgb(72, 167, 255);
+}

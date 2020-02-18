@@ -4,20 +4,36 @@ import { Card, Button, Image, Icon } from 'semantic-ui-react';
 
 export default (props) => {
 	return (
-		<Card style={{ marginLeft: 'auto', marginRight: 'auto' }}>
-            <Image src={props.item.image} wrapped ui={false}/>
-			<Card.Content className='contentBox' style={{minHeight: '200px', paddingRight: '-17px'}}>
-				
-				<Card.Header>{props.item.title}</Card.Header>
-				<Card.Meta>{props.item.skills}</Card.Meta>
-				<Card.Description>{props.item.description}</Card.Description>
+		<Card style={{ marginLeft: 'auto', marginRight: 'auto', minWidth: '30vw', fontSize: '14px' }}>
+			<Card.Content>
+				<Card.Header style={{fontFamily: "'Patua One', cursive", fontSize: '30px'}}>{props.item.title}</Card.Header>
 			</Card.Content>
+
+			<Image src={props.item.image} wrapped ui={false} />
+			<Card.Content className="contentBox" style={{ paddingRight: '-17px' }}>
+				<Card.Meta style={{color: 'black', fontSize: '18px'}}>{props.item.skills}</Card.Meta>
+				<Card.Description style={{fontFamily: "'Bree Serif', serif"}}>{props.item.skillsDescription}</Card.Description>
+			</Card.Content>
+
+			<Card.Content>
+				<Card.Meta style={{color: 'black'}}>Project:</Card.Meta>
+				<Card.Description style={{fontFamily: "'Bree Serif', serif", fontWeight: 'medium'}}>{props.item.description}</Card.Description>
+			</Card.Content>
+
 			<Card.Content extra>
 				{/* <div className="ui two buttons"> */}
-						<Button as='a' href={props.item.github} target='_blank' rel="noopener noreferrer" basic color="blue" fluid >
-							<Icon name="github" />Github
-						</Button>
-					{/* <Button disabled basic color="teal" content="Teal">
+				<Button
+					as="a"
+					href={props.item.github}
+					target="_blank"
+					rel="noopener noreferrer"
+					basic
+					color="blue"
+					fluid
+				>
+					<Icon name="github" />Github
+				</Button>
+				{/* <Button disabled basic color="teal" content="Teal">
 						<Icon name="world" />Live Demo
 					</Button> */}
 				{/* </div> */}

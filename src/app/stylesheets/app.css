@@ -13,9 +13,10 @@ html, body {
         background-color: rgba(0, 0, 0, 0.637) !important;
     }
     #stickyBtn {
-        position: absolute;
-        top: 15px; 
-        left: 15px;
+        position: -webkit-sticky;
+        position: sticky !important;
+        top: 4vh; 
+        left: 4vw;
     }
 }
 
