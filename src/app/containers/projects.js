@@ -22,9 +22,9 @@ const projects = [
 	{
 		image: ST,
 		title: 'Sentimental Tweet',
-		skills: 'React, Rails,',
+		skills: 'React, Semantic UI, Rails',
 		description: 'This app calls on Tweeter API and runs sentiment API on their most recent tweets. Users can login to create favorites and observe trends on their Tweet sentiment.',
-		skillsDescription: 'This was a team project where I took a lead on the front-end. The project focused on using React and its library, Semantic UI, as well as a thought out UI/UX designs.',
+		skillsDescription: 'This was a team project where I took a lead on the front-end. On this project, I focused on using React and its library, Semantic UI, as well as a thought out UI/UX designs.',
 		github: 'https://github.com/liahnee/sentimentTweet',
 		live: ''
 	},
@@ -33,14 +33,14 @@ const projects = [
 		title: 'Grow a Tree',
 		skills: 'Vanilla Javascript, Ruby on Rails',
 		description: 'Users can select a random seed and watch it grow into different tree as it is wateredd.',
-		skillsDescription: 'Focus of the project was using vanilla CSS and vanilla JS that reacts with different data sent from the backend.',
+		skillsDescription: 'Focus of the project was using vanilla CSS and vanilla JS with RESTFUL API and respond accordingly with different data sent from the backend.',
 		github: 'https://github.com/liahnee/tree',
 		live: ''
 	},
 	{
 		image: AC,
 		title: 'Adopt a Child',
-		skills: 'Ruby, Rails, SQL',
+		skills: 'Ruby on Rails, Vanilla CSS, SQL',
 		description: "This is a game app where a user can adopt a child of random stats and gender. Users can create a schedule for the child and how each schedule affected child's status to figure out their characteristics.",
 		skillsDescription: 'This project was entirely Ruby on Rails for the front and the back-end. This project has many backend calculations and conditions for a different set of characteristics the data holds for rendering and carrying out new calculations. Vanilla CSS was used for UI. ',
 		github: 'https://github.com/liahnee/child_rails_mod2',
