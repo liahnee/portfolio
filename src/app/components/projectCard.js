@@ -4,7 +4,7 @@ import { Card, Button, Image, Icon } from 'semantic-ui-react';
 
 export default (props) => {
 	return (
-		<Card style={{ marginLeft: 'auto', marginRight: 'auto', minWidth: '30vw', fontSize: '14px' }}>
+		<Card style={{ marginLeft: 'auto', marginRight: 'auto', minWidth: '30vw', fontSize: '16px' }}>
 			<Card.Content>
 				<Card.Header style={{fontFamily: "'Patua One', cursive", fontSize: '30px'}}>{props.item.title}</Card.Header>
 			</Card.Content>
@@ -16,8 +16,8 @@ export default (props) => {
 			</Card.Content>
 
 			<Card.Content>
-				<Card.Meta style={{color: 'black'}}>Project:</Card.Meta>
-				<Card.Description style={{fontFamily: "'Bree Serif', serif", fontWeight: 'medium'}}>{props.item.description}</Card.Description>
+				<Card.Meta style={{color: 'black', fontSize: '18px'}}>Project:</Card.Meta>
+				<Card.Description style={{fontFamily: "'Bree Serif', serif"}}>{props.item.description}</Card.Description>
 			</Card.Content>
 
 			<Card.Content extra>
