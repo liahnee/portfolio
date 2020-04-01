@@ -25,10 +25,9 @@ export default () => {
 				className="BWdivider"
 				style={{
 					backgroundImage: `url(${BlackBottom})`,
-					backgroundSize: 'cover',
+					backgroundSize: '105% 100%',
 					backgroundRepeat: 'no-repeat',
-					minHeight: '200px',
-					minWidth: '100%'
+					height: '18rem'
 				}}
 			/>
 			<Grid
@@ -79,10 +78,9 @@ export default () => {
 				className="BWdivider"
 				style={{
 					backgroundImage: `url(${BlackTop})`,
-					backgroundSize: 'cover',
+					backgroundSize: '105% 100%',
 					backgroundRepeat: 'no-repeat',
-					minHeight: '200px',
-					minWidth: '100%'
+					height: '18rem'
 				}}
 			/>
 		</div>
