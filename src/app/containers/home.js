@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../stylesheets/home.css';
 
-import { Container, Image, Header } from 'semantic-ui-react';
+import { Image, Header } from 'semantic-ui-react';
 import ProfilePic from '../assets/profilePic.jpg';
 
 export default (props) => {
@@ -14,14 +14,6 @@ export default (props) => {
 			setIsMobile(false);
 		}
 	}, []);
-
-	const float = () =>{
-		if (isMobile) {
-			return false;
-		} else {
-			return "left";
-		}
-	}
 
 	return (
 		<div id="home" 
