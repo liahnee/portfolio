@@ -1,0 +1,69 @@
+{
+    "fullStack": {
+        "title": "React, Javascript, Ruby on Rails",
+        "description": "The following projects are full-stack apps with Javascript, React and/or Ruby. The project links to the corresponding GitHub page.",
+        "lists": [{
+            "title": "Web Health Record",
+            "skills": "Redux, JWT, React, Rails",
+            "description": "This project was built to mock a patient chart used in the primary care clinics. Users can create multiple patient profiles, their chief complaints, and visit chart for each complaint.",
+            "skillsDescription": "The skill sets exercised with this project was implementing JWT and Redux for the React front-end and Ruby on Rails backend. Redux was used for the scalability of the app. Data massaging was also done for diagnosis which searches on ICD11 API.",
+            "image": {"src": "WHR", "alt":"WHR page preview"},
+            "link": "https://github.com/liahnee/whr_frontend"
+        },{
+            "title": "Sentimental Tweet",
+            "skills": "React, Semantic UI, Rails",
+            "description": "This app calls on Tweeter API and runs sentiment API on their most recent tweets. Users can log in to create favorites and observe trends on their Tweet sentiment.",
+            "skillsDescription": "This was a team project where I took a lead on the front-end. On this project, I focused on using React and its library, Semantic UI, as well as a thought out UI/UX designs.",
+            "image": {"src": "ST", "alt":"Sentimental Tweet page preview"},
+            "link": "https://github.com/liahnee/sentimentTweet"
+        },{
+            "title": "Grow a Tree",
+            "skills": "Vanilla Javascript, Ruby on Rails",
+            "description": "Users can select a random seed and watch it grow into different a tree as it is watered.",
+            "skillsDescription": "The focus of the project was using vanilla CSS and vanilla JS with RESTFUL API and respond accordingly with different data sent from the backend.",
+            "image": {"src": "Tree", "alt":"Grow a Tree page preview"},
+            "link": "https://github.com/liahnee/tree"
+        },{
+            "title": "Adopt a Child",
+            "skills": "Ruby on Rails, Vanilla CSS, SQL",
+            "description": "This is a game app where a user can adopt a child of random stats and gender. Users can create a schedule for the child and how each schedule affected the child's status to figure out their characteristics.",
+            "skillsDescription": "This project was entirely Ruby on Rails for the front and the back-end. This project has many backend calculations and conditions for a different set of characteristics the data holds for rendering and carrying out new calculations. Vanilla CSS was used for UI.",
+            "image": {"src": "AC", "alt":"Adopt a Child page preview"},
+            "link": "https://github.com/liahnee/child_rails_mod2"
+        }]
+    },
+    "frontEnd":{
+        "title": "HTML5/CSS3",
+        "description": "The following projects are front-end pages written with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. The project links to corresponding codepen.io page.",
+        "lists": [{
+            "title": "Style: Portfolio/Product Landing Page",
+            "skills": "HTML5, CSS3",
+            "description": "This page introduces different video contents created by a musician Song4B.",
+            "skillsDescription": "The page utilizes z-index and pseudo-elements to create a layered background. HTML5 elements used include but are not limited to, header, main, nav, section, details, and iframe.",
+            "image": {"src": "PPro", "alt": "Product landing page preview"},
+
+            "link": "https://codepen.io/liahnee/full/RwPdevz"
+        },{
+            "title": "Style: Documentation Page",
+            "skills": "HTML5, CSS3",
+            "description": "The page summarizes basic foundation of SASS, referenced by sass-lang.com.",
+            "skillsDescription": "The project was to format in a documentation style with focused on accessibility through keeping track of each header in an appropriate order and utilizing the code element.",
+            "image": {"src": "PDoc", "alt": "Documentation page preview"},
+            "link": "https://codepen.io/liahnee/full/GRJamWB"
+        },{
+            "title": "Style: Survey Page",
+            "skills": "HTML5, CSS3",
+            "description": "This is a survey page to be filled out by a user regarding user experience on the website.",
+            "skillsDescription": "The page explores multiple form elements as well as their attributes. Some of the elements included in the page are checkbox, radio, text-area, and dropdown. Clean and minimal images and colors were used to reduce distractions. ",
+            "image": {"src":"PSur", "alt":"Survey page preview"},
+            "link": "https://codepen.io/liahnee/full/wvaNbZz"
+        },{
+            "title": "Style: Tribute Page",
+            "skills": "HTML5, CSS3",
+            "description": "This project was to create a tribute page for Cardinal Stephen Kim, who is one of the respected figures in modern Korean history.",
+            "skillsDescription": "The page handles multiple HTML5 elements, which includes but are not limited to figure, fig-caption, details, section, blockquotes, hr, ul, and cite.",
+            "image": {"src":"PTri", "alt":"Tribute page preview"},
+            "link": "https://codepen.io/liahnee/full/PoqVRQK"
+        }]
+    }
+}

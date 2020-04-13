@@ -1,5 +1,62 @@
-.home {
-    /* background-image: url('../assets/bg1.png'); */
-    min-height: 80vh;
-    margin-top: 20vh;
+
+#home {
+    min-height: 110vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+#home-container {
+    max-width: 80vw;
+    position: relative;
+    top: 20vh;
+    float: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#home-image {
+    float: left;
+}
+
+#home-header {
+    padding-top: 10%;
+    padding-left: 350px;
+    font-family: 'Patua One', cursive;
+    font-size: 5rem;
+    margin: auto auto;
+    width: fit-content;
+}
+
+#home-intro {
+    text-align: left;
+    font-family: 'Merienda', cursive;
+    font-size: 3rem;
+    margin: 5rem auto 5rem auto; 
+    text-align: center;
+    flex-basis: 100%;
+}
+
+@media (max-width: 1000px) {
+    #home {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #home-image {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #home-header {
+        font-size: 3rem !important;
+        padding: 0.5rem 0 0.5rem 0;
+        margin: 5rem auto 1rem auto;
+        text-align: center;
+    }
+    #home-intro {
+        font-size: 1.5rem !important;
+        margin: 2rem auto 5rem 0;
+    }
 }

@@ -1,0 +1,135 @@
+a {
+    color: black;
+}
+
+#projects h3 {
+    font-size: 2rem;
+}
+
+#projects h3, p {
+    margin: 1rem 1rem;
+}
+
+
+.project-list {
+    max-width: 80vw;
+    margin: 1rem auto 3rem auto;
+}
+
+@media (max-width: 800px) {
+    .project-list {
+        max-width: 100%;
+    }
+}
+
+.project-list-grid {
+    display: grid;
+    grid-template-columns: 20em 1fr;
+    /* border: 1px solid; */
+    min-height: calc((80vw - 20rem ) * 0.60 + 6rem);
+}
+
+.project-description {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 2rem 0; 
+}
+
+@media (max-width: 800px) {
+    .project-list-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+}
+
+.project-list-lists {
+    margin-top: 30px;
+}
+
+.project-title {
+    display: block;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+}
+
+.project-title:hover {
+    cursor: pointer;
+}
+
+.project-list-description {
+    width: 100%;
+    min-height: 45rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+.project-list-description a {
+    max-width: 90%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-rows: calc((80vw - 20rem) * 0.50) auto;
+}
+
+.project-image {
+    max-width: 100%;
+    box-shadow: 1px 1px 3px black;
+    margin: auto auto;
+    max-width: calc((80vw - 20rem) * 0.75);
+}
+
+.project-list-description:hover img {
+    box-shadow: 2px 4px 5px cornflowerblue;
+    max-width: calc((80vw - 20rem) * 0.76);
+}
+
+.project-list-description:hover a {    
+    color: cornflowerblue;
+
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+
+
+.project-list-description a {
+    max-width: 90%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+    .project-list-description img {
+        max-width: 60vw;
+    }
+    .project-list-description:hover img {
+        max-width: 60vw;
+    }
+    .project-list-description {
+        min-height: 30rem;
+    }
+    .project-list-description img {
+        margin: 1rem auto;
+    }
+    .project-description {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+}
+
+.project-list-description p {
+    /* border-top: 1px solid; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 100%;
+    margin: 0;
+}
+
