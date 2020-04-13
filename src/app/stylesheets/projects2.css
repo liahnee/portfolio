@@ -1,0 +1,21 @@
+
+:root {
+    --project-font:'Patua One', cursive;
+}
+
+#projects { 
+    font-size: 1.2rem;
+    font-family: var(--project-font);
+}
+
+#projects h2 {
+    font-family: var(--project-font);
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 15rem;
+}
+
+#projects h3 {
+    font-family: var(--project-font);
+}

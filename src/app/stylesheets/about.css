@@ -3,6 +3,22 @@
     color: white;
     font-family: 'Merienda One', cursive;
     font-size: 40px;
+    /* background-color: white; */
+    position: relative;
+}
+
+.about h2 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    background-color: black;
+}
+
+#about-grid {
+    margin-top: 0;
 }
 
 .about-image {
@@ -39,4 +55,10 @@
     color: white !important;
     margin-top: 45% !important; 
     margin-bottom: 0 !important;
+}
+
+@media (max-width: 800px) {
+    .BWdivider {
+        background-size: 1000% 100% !important;
+    }
 }

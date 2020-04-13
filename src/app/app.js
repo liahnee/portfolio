@@ -6,14 +6,16 @@ import { Menu, Icon, Sidebar, Button } from 'semantic-ui-react';
 import DesktopMenu from './components/desktopMenu';
 import Home from './containers/home';
 import About from './containers/about';
-import Projects from './containers/projects';
+import Projects from './containers/projects2';
 
 import BottomDiv from './components/bottomDiv';
 
 const navItems = [
 	{ path: 'https://drive.google.com/file/d/12ybEM-bOMxlBCbCgY3kgJbXfaGAuc8jp/view?usp=sharing', icon: 'file outline', text: 'Resume' },
-	{ path: 'https://github.com/liahnee', icon: 'github alternate', text: 'Github' },
 	{ path: 'https://www.linkedin.com/in/catherine-yang-0ab40b3a/', icon: 'linkedin', text: 'LinkedIn' },
+	{ path: "https://codepen.io/liahnee", icon: 'codepen', text: 'CodePen' },
+	{ path: 'https://github.com/liahnee', icon: 'github alternate', text: 'Github' },
+	
 	// { path: '/contact', icon: 'envelope outline', text: 'Contact' },
 ];
 

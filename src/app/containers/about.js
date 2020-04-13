@@ -12,7 +12,7 @@ import ImgShells from '../assets/sq2.jpg';
 import ImgClass from '../assets/sq4.1.jpg';
 
 const imagesFirstRow = [
-	{ bgImage: ImgDrawing, text: 'I used to draw,', animated: 'move up' },
+	{ bgImage: ImgDrawing, text: 'draw,', animated: 'move up' },
 	{ bgImage: ImgShells, text: 'paint,', animated: 'move' },
 	{ bgImage: ImgClass, text: 'and teach.', animated: 'move down' }
 ];
@@ -20,7 +20,7 @@ const imagesSecondRow = [ { bgImage: ImgShells, text: 'Now I code and paint.', a
 
 export default () => {
 	return (
-		<div className="about">
+		<div className="about" style={{zIndex:"6"}}>
 			<div
 				className="BWdivider"
 				style={{
@@ -30,7 +30,9 @@ export default () => {
 					height: '18rem'
 				}}
 			/>
+			<h2>I used to...</h2>
 			<Grid
+				id="about-grid"
 				columns={3}
 				centered
 				stackable
