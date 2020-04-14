@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../stylesheets/projectList.css';
 import PPro from '../assets/preview_pro.png';
@@ -12,6 +12,13 @@ import Tree from '../assets/tree.png';
 import ST from '../assets/sentT.png';
 
 export default ({data, ...props}) => {
+    useEffect(() => {
+        let imgList = [PPro, PDoc, PSur, PTri, WHR, AC, Tree, ST];
+        imgList.forEach(i => {
+            new Image().src = i;
+        });
+    }, [])
+
     const [ selected, setSelected ] = useState("");
     const [ hover, setHover ] = useState("");
 
