@@ -82,7 +82,7 @@ a {
 
 .project-image {
     max-width: 100%;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 2px 4px 5px black;
     margin: auto auto;
     max-width: calc((80vw - 20rem) * 0.75);
 }
@@ -94,8 +94,6 @@ a {
 
 .project-list-description:hover a {    
     color: cornflowerblue;
-
-    margin-bottom: 2rem;
 }
 
 @media (max-width: 800px) {
