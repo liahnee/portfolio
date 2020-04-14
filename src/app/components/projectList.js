@@ -50,11 +50,11 @@ export default ({data, ...props}) => {
     }
 
     const handleMouseEnter = (item) => {
-        setHover(item);
+        setSelected(item);
     }
 
     const handleMouseLeave = () => {
-        setHover("");
+        // setHover("");
     }
 
     const imgSrc = (item) => {
