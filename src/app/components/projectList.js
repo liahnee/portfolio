@@ -173,7 +173,7 @@ console.log(type)
  
     return (
         <section className="project-list">
-            <h3>{data.title}</h3>
+            <h3 class="section-title">{data.title}</h3>
             <p className="project-description">{data.description} </p>
             <div className="project-list-grid" >
                 <div className="project-list-lists">
