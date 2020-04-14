@@ -54,7 +54,7 @@ export default ({data, ...props}) => {
     }
 
     const handleMouseLeave = () => {
-        // setHover("");
+        setHover("");
     }
 
     const imgSrc = (item) => {
