@@ -34,7 +34,7 @@
     },
     "frontEnd":{
         "title": "HTML5/CSS3",
-        "description": "The following projects are front-end pages written with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. Clicking on the project image links to corresponding CodePen page.",
+        "description": "The following projects are front-end pages written with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. Clicking on the project image links to the corresponding CodePen page.",
         "lists": [{
             "title": "Style: Portfolio/Product Landing Page",
             "skills": "HTML5, CSS3",

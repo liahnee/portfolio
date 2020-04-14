@@ -23,11 +23,11 @@ export default ({data, ...props}) => {
     const [ hover, setHover ] = useState("");
 
     const handleClick = (item) => {
-        if (selected === item ) {
-            setSelected(""); 
-        } else {
+        // if (selected === item ) {
+        //     setSelected(""); 
+        // } else {
             setSelected(item);
-        };
+        // };
     }
 
     const selectedTitleStyle = (item, idx) => {
@@ -50,11 +50,11 @@ export default ({data, ...props}) => {
     }
 
     const handleMouseEnter = (item) => {
-        setHover(item);
+        setSelected(item);
     }
 
     const handleMouseLeave = () => {
-        setHover("");
+        // setHover("");
     }
 
     const imgSrc = (item) => {
