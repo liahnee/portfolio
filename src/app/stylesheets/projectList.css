@@ -5,10 +5,10 @@ a {
 #projects h3 {
     font-size: 2rem;
 }
-
+/* 
 #projects h3, p {
     margin: 1rem 1rem;
-}
+} */
 
 
 .project-list {
@@ -42,10 +42,10 @@ a {
         height: 100%;
     }
 }
-
+/* 
 .project-list-lists {
     margin-top: 30px;
-}
+} */
 
 .project-title {
     display: block;
@@ -58,21 +58,18 @@ a {
     cursor: pointer;
 }
 
+
 .project-list-description {
-    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-rows: calc((80vw - 20rem) * 0.50) auto;
+    width: 90%;
     min-height: 45rem;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
     overflow: auto;
-}
-
-.project-list-description a {
-    max-width: 90%;
-    height: 100%;
-    margin: auto auto;
-    display: grid;
-    grid-template-rows: calc((80vw - 20rem) * 0.50) auto;
 }
 
 .project-image {
@@ -83,7 +80,6 @@ a {
 }
 
 .project-list-description:hover img {
-    box-shadow: 2px 4px 5px cornflowerblue;
     max-width: calc((80vw - 20rem) * 0.76);
 }
 
@@ -94,7 +90,7 @@ a {
 @media (max-width: 800px) {
 
 
-.project-list-description a {
+.project-list-description {
     max-width: 90%;
     height: 100%;
     margin: auto auto;
@@ -126,3 +122,53 @@ a {
     margin: 0;
 }
 
+.project-description-btn {
+    width: 90%;
+    margin: 0 auto !important;
+}
+.project-description-btn:hover {
+    width: 91%;
+}
+
+
+@media (min-width: 1200px) {
+    #projects {
+        width: 1000px; 
+    }
+
+    .project-list {
+        max-width: 100%;
+        margin: 1rem auto 3rem auto;
+    }
+    .project-list-grid {
+        display: grid;
+        grid-template-columns: 20em 1fr;
+        /* border: 1px solid; */
+        min-height: calc((1000px - 20rem ) * 0.70 + 10rem);
+    }
+
+    .project-list-description {
+        height: 100%;
+        margin: auto auto;
+        display: grid;
+        grid-template-rows: calc((800px - 20rem) * 0.70) 5rem auto;
+        width: 90%;
+        min-height: 45rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        overflow: auto;
+    }
+
+    .project-image {
+        max-width: 100%;
+        box-shadow: 2px 4px 5px black;
+        margin: auto auto;
+        max-width: 80%;
+    }
+
+    .project-list-description:hover img {
+        max-width: 80%;
+    }
+
+}
