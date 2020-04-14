@@ -19,10 +19,12 @@ export default (props) => {
 				<div id="nav-btn-container">
 					
 					{props.navItems.map((item, idx) => (
-						<button className="menuItem" as="a" href={item.path} target="_blank" color="black" rel="noopener noreferrer" key={idx} >
-							<Icon name={item.icon} />
-							{item.text}
-						</button>
+						<a href={item.path} target="_blank" rel="noopener noreferrer" key={idx} >
+							<button className="menuItem" >
+								<Icon name={item.icon} />
+								{item.text}
+							</button>
+						</a>
 					))}
 					
 				 </div>

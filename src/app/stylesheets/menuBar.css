@@ -22,7 +22,6 @@
     /* display: flex; */
 }
 
-
 .menuItem {
     border: none !important;
     height: 4rem;
@@ -39,6 +38,8 @@
 
 .menuItem:focus {
     border: none;
+    box-shadow: none;
+    outline: none;
 }
 
 #nav-btn-container {
