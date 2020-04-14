@@ -22,6 +22,7 @@ export default () => {
 						className="bottom-nav-btn"
 						as="a"
 						href="https://drive.google.com/file/d/12ybEM-bOMxlBCbCgY3kgJbXfaGAuc8jp/view?usp=sharing"
+						rel="noopener noreferrer"
 						target="_blank"
 						color="olive"
 						circular 
@@ -33,6 +34,7 @@ export default () => {
 						className="bottom-nav-btn"
 						as="a"
 						href="https://www.linkedin.com/in/catherine-yang-0ab40b3a/"
+						rel="noopener noreferrer"
 						target="_blank"
 						color="blue"
 						circular 
@@ -44,8 +46,8 @@ export default () => {
 						className="bottom-nav-btn"
 						as="a"
 						href="https://codepen.io/liahnee"
+						rel="noopener noreferrer"
 						target="_blank"
-						color="standard"
 						inverted
 						circular 
 						icon="codepen"
@@ -55,6 +57,7 @@ export default () => {
 						className="bottom-nav-btn"
 						as="a"
 						href="https://www.linkedin.com/in/catherine-yang-0ab40b3a/"
+						rel="noopener noreferrer"
 						target="_blank"
 						color="teal"
 						circular 
