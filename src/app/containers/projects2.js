@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import ProjectList from '../components/projectList';
 import '../stylesheets/projects2.css';
