@@ -1,31 +1,31 @@
 {
     "fullStack": {
         "title": "React, Javascript, Ruby on Rails",
-        "description": "The following projects are full-stack apps with Javascript, React and/or Ruby. The project links to the corresponding GitHub page.",
+        "description": "The following projects are full-stack apps with Javascript, React and/or Ruby. Clicking on the project image links to the corresponding GitHub page.",
         "lists": [{
             "title": "Web Health Record",
-            "skills": "Redux, JWT, React, Rails",
+            "skills": "Redux, JWT, React, Ruby on Rails",
             "description": "This project was built to mock a patient chart used in the primary care clinics. Users can create multiple patient profiles, their chief complaints, and visit chart for each complaint.",
             "skillsDescription": "The skill sets exercised with this project was implementing JWT and Redux for the React front-end and Ruby on Rails backend. Redux was used for the scalability of the app. Data massaging was also done for diagnosis which searches on ICD11 API.",
             "image": {"src": "WHR", "alt":"WHR page preview"},
             "link": "https://github.com/liahnee/whr_frontend"
         },{
             "title": "Sentimental Tweet",
-            "skills": "React, Semantic UI, Rails",
+            "skills": "React, Semantic UI, Ruby on Rails",
             "description": "This app calls on Tweeter API and runs sentiment API on their most recent tweets. Users can log in to create favorites and observe trends on their Tweet sentiment.",
             "skillsDescription": "This was a team project where I took a lead on the front-end. On this project, I focused on using React and its library, Semantic UI, as well as a thought out UI/UX designs.",
             "image": {"src": "ST", "alt":"Sentimental Tweet page preview"},
             "link": "https://github.com/liahnee/sentimentTweet"
         },{
             "title": "Grow a Tree",
-            "skills": "Vanilla Javascript, Ruby on Rails",
+            "skills": "Javascript, Ruby on Rails",
             "description": "Users can select a random seed and watch it grow into different a tree as it is watered.",
             "skillsDescription": "The focus of the project was using vanilla CSS and vanilla JS with RESTFUL API and respond accordingly with different data sent from the backend.",
             "image": {"src": "Tree", "alt":"Grow a Tree page preview"},
             "link": "https://github.com/liahnee/tree"
         },{
             "title": "Adopt a Child",
-            "skills": "Ruby on Rails, Vanilla CSS, SQL",
+            "skills": "Ruby on Rails, CSS3, SQL",
             "description": "This is a game app where a user can adopt a child of random stats and gender. Users can create a schedule for the child and how each schedule affected the child's status to figure out their characteristics.",
             "skillsDescription": "This project was entirely Ruby on Rails for the front and the back-end. This project has many backend calculations and conditions for a different set of characteristics the data holds for rendering and carrying out new calculations. Vanilla CSS was used for UI.",
             "image": {"src": "AC", "alt":"Adopt a Child page preview"},
@@ -34,7 +34,7 @@
     },
     "frontEnd":{
         "title": "HTML5/CSS3",
-        "description": "The following projects are front-end pages written with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. The project links to corresponding codepen.io page.",
+        "description": "The following projects are front-end pages written with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. Clicking on the project image links to corresponding CodePen page.",
         "lists": [{
             "title": "Style: Portfolio/Product Landing Page",
             "skills": "HTML5, CSS3",
