@@ -79,9 +79,15 @@ a {
     max-width: calc((80vw - 20rem) * 0.76);
 }
 
-.project-list-description:hover a {    
-    color: cornflowerblue;
+.project-description-btn {
+    width: 80%;
+    margin: 0 auto !important;
 }
+
+.project-description-btn:hover {
+    width: 80%;
+}
+
 
 @media (max-width: 800px) {
 
@@ -95,6 +101,10 @@ a {
     .project-list-description img {
         max-width: 60vw;
         margin: 1rem auto;
+    }
+
+    .project-description-btn {
+        max-width: 60vw;
     }
     .project-list-description:hover img {
         max-width: 60vw;
@@ -111,14 +121,6 @@ a {
     padding: 0.5rem 1rem 0.5rem 1rem;
     width: 100%;
     margin: 0;
-}
-
-.project-description-btn {
-    width: 90%;
-    margin: 0 auto !important;
-}
-.project-description-btn:hover {
-    width: 91%;
 }
 
 
@@ -161,5 +163,10 @@ a {
     .project-list-description:hover img {
         max-width: 80%;
     }
+/* 
+    .project-description-btn {
+        width: 100%;
+        margin: 0 auto !important;
+    } */
 
 }
