@@ -117,11 +117,17 @@ console.log(type)
                     <Icon name={style.icon} />
                     {style.text}
                 </Button>
-                {type.skills? <p className="skills">Skills: {type.skills}</p>: null}
-                <p className="project-description">{type.description}</p>
-                {type.skillsDescription? <p className="skillsDescription">{type.skillsDescription}</p>: null}
-                
-                
+                <div className="project-description-p-container">
+                    <div>
+                        <label>Skills </label><br/><p className="skills">{type.skills}</p> 
+                    </div>
+                    <div>
+                        <label>Project Description</label><br/> <p className="project-description">{type.description}</p>
+                    </div>
+                    <div>
+                        <label>Code Description</label><br/> <p className="skillsDescription">{type.skillsDescription}</p>
+                    </div>  
+                </div>              
             </div>
         )
     }
@@ -173,7 +179,7 @@ console.log(type)
  
     return (
         <section className="project-list">
-            <h3>{data.title}</h3>
+            <h3 class="section-title">{data.title}</h3>
             <p className="project-description">{data.description} </p>
             <div className="project-list-grid" >
                 <div className="project-list-lists">
