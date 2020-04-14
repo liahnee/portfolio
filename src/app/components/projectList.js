@@ -23,13 +23,17 @@ export default ({data, ...props}) => {
         };
     }
 
-    const selectedTitleStyle = (item) => {
+    const selectedTitleStyle = (item, idx) => {
+        let style = countBorder(idx);
         if (hover.title === item.title) {
-            return {backgroundColor: "darkgrey"}
+            style.backgroundColor = "darkgrey";
+            return style;
         }
         if (selected.title === item.title) {
-            return {backgroundColor: "lightgrey"}
+            style.backgroundColor = "lightgrey";
+            return style;
         };
+        return style;
     }
 
     const hoverDescriptionStyle = () => {
@@ -85,6 +89,14 @@ export default ({data, ...props}) => {
             setSelected("")
         }
     }
+
+    const countBorder = (idx) => {
+        if (idx === 0) {
+            return {borderTop: "2px solid grey", borderBottom: "2px solid grey"}
+        } else {
+            return {borderBottom: "2px solid grey"}
+        }
+    }
  
     return (
         <section className="project-list" onClick={(e) => handleUnclick(e)}>
@@ -94,7 +106,7 @@ export default ({data, ...props}) => {
                 <div className="project-list-lists">
                     {data.lists.map((item, idx) => {
                             return (
-                                <p key={idx} className="project-title" onClick={() => handleClick(item)} onMouseEnter={() => handleMouseEnter(item)} onMouseLeave={()=>handleMouseLeave()} style={selectedTitleStyle(item)}>{item.title}</p>
+                                <p key={idx} className="project-title" onClick={() => handleClick(item)} onMouseEnter={() => handleMouseEnter(item)} onMouseLeave={()=>handleMouseLeave()} style={selectedTitleStyle(item, idx)}>{item.title}</p>
                             )
                         })}
                 </div>
