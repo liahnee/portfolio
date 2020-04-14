@@ -82,10 +82,20 @@ export default ({data, ...props}) => {
 
     const show = () => {
         if (hover !== "") {
-        return <a href={hover.link} target="_blank" rel="noopener noreferrer"><img className="project-image" src={imgSrc(hover)} alt={hover.image.alt} /><p className="project-description">{hover.description}</p>{hover.skillsDescription? <p className="skillsDescription">{hover.skillsDescription}</p>: null}</a> 
+        return <a href={hover.link} target="_blank" rel="noopener noreferrer">
+                <img className="project-image" src={imgSrc(hover)} alt={hover.image.alt} />
+                {hover.skills? <p className="skills">Skills: {hover.skills}</p>: null}
+                <p className="project-description">{hover.description}</p>
+                {hover.skillsDescription? <p className="skillsDescription">{hover.skillsDescription}</p>: null}
+            </a> 
         }  else if (selected !== "") {
             return (
-                <a href={selected.link} target="_blank" rel="noopener noreferrer"><img className="project-image" src={imgSrc(selected)} alt={selected.image.alt} /><p className="project-description">{selected.description}</p>{selected.skillsDescription? <p className="skillsDescription">{selected.skillsDescription}</p>: null}</a> 
+                <a href={selected.link} target="_blank" rel="noopener noreferrer">
+                    <img className="project-image" src={imgSrc(selected)} alt={selected.image.alt} />
+                    {selected.skills? <p className="skills">Skills: {selected.skills}</p>: null}
+                    <p className="project-description">{selected.description}</p>
+                    {selected.skillsDescription? <p className="skillsDescription">{selected.skillsDescription}</p>: null}
+                </a> 
                     
             );
         } 
@@ -108,7 +118,7 @@ export default ({data, ...props}) => {
     return (
         <section className="project-list" onClick={(e) => handleUnclick(e)}>
             <h3>{data.title}</h3>
-            <p className="project-description">{data.description} Click to see the details. </p>
+            <p className="project-description">{data.description} </p>
             <div className="project-list-grid" >
                 <div className="project-list-lists">
                     {data.lists.map((item, idx) => {
