@@ -19,7 +19,7 @@ export default ({data, ...props}) => {
         });
     }, [])
 
-    const [ selected, setSelected ] = useState("");
+    const [ selected, setSelected ] = useState(data.lists[0]);
     const [ hover, setHover ] = useState("");
 
     const handleClick = (item) => {
