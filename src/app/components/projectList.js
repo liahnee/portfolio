@@ -10,6 +10,7 @@ import WHR from '../assets/whr_front.png';
 import AC from '../assets/adopt.png';
 import Tree from '../assets/tree.png';
 import ST from '../assets/sentT.png';
+import { Button, Icon } from 'semantic-ui-react';
 
 export default ({data, ...props}) => {
     useEffect(() => {
@@ -23,11 +24,11 @@ export default ({data, ...props}) => {
     const [ hover, setHover ] = useState("");
 
     const handleClick = (item) => {
-        // if (selected === item ) {
-        //     setSelected(""); 
-        // } else {
+        if (selected === item ) {
+            setSelected(""); 
+        } else {
             setSelected(item);
-        // };
+        };
     }
 
     const selectedTitleStyle = (item, idx) => {
@@ -50,7 +51,7 @@ export default ({data, ...props}) => {
     }
 
     const handleMouseEnter = (item) => {
-        setSelected(item);
+        setHover(item);
     }
 
     const handleMouseLeave = () => {
@@ -80,32 +81,87 @@ export default ({data, ...props}) => {
         }
     }
 
-    const show = () => {
-        if (hover !== "") {
-        return <a href={hover.link} target="_blank" rel="noopener noreferrer">
-                <img className="project-image" src={imgSrc(hover)} alt={hover.image.alt} />
-                {hover.skills? <p className="skills">Skills: {hover.skills}</p>: null}
-                <p className="project-description">{hover.description}</p>
-                {hover.skillsDescription? <p className="skillsDescription">{hover.skillsDescription}</p>: null}
-            </a> 
-        }  else if (selected !== "") {
-            return (
-                <a href={selected.link} target="_blank" rel="noopener noreferrer">
-                    <img className="project-image" src={imgSrc(selected)} alt={selected.image.alt} />
-                    {selected.skills? <p className="skills">Skills: {selected.skills}</p>: null}
-                    <p className="project-description">{selected.description}</p>
-                    {selected.skillsDescription? <p className="skillsDescription">{selected.skillsDescription}</p>: null}
-                </a> 
-                    
-            );
-        } 
-    }
-
-    const handleUnclick = (e) => {
-        if (e.target.className !== "project-title") {
-            setSelected("")
+    const btn = (type) => {
+console.log(type)
+        switch (type) {
+            case "codepen":
+                return {text: "CodePen", icon: "codepen", color:"black"};
+            case "github":
+                return {text: "Github", icon: "github", color:"teal"};
+            default:
+                return null;
         }
     }
+
+    const description = (type) => {
+        // let style;
+        // type !== "" ? 
+        
+        let style = btn(type.type)
+        return (
+            <div className="project-list-description" style={hoverDescriptionStyle()}>
+                
+                <img className="project-image" src={imgSrc(type)} alt={type.image.alt} />
+                <Button
+                    className="project-description-btn"
+                    as="a"
+                    href={type.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    color={style.color}
+                    
+                    basic
+                    
+                    size="huge"
+                >
+                    <Icon name={style.icon} />
+                    {style.text}
+                </Button>
+                {type.skills? <p className="skills">Skills: {type.skills}</p>: null}
+                <p className="project-description">{type.description}</p>
+                {type.skillsDescription? <p className="skillsDescription">{type.skillsDescription}</p>: null}
+                
+                
+            </div>
+        )
+    }
+
+    const show = () => {
+        
+        if (hover !== "") {
+            return description(hover); 
+        } else if (selected !== "") {
+            return description(selected);
+        }
+
+        // if (hover !== "") {
+        // return <a href={hover.link} target="_blank" rel="noopener noreferrer">
+        //         <img className="project-image" src={imgSrc(hover)} alt={hover.image.alt} />
+        //         {hover.skills? <p className="skills">Skills: {hover.skills}</p>: null}
+        //         <p className="project-description">{hover.description}</p>
+        //         {hover.skillsDescription? <p className="skillsDescription">{hover.skillsDescription}</p>: null}
+        //     </a> 
+        // }  else if (selected !== "") {
+        //     return (
+        //         <div className="project-list-description" style={hoverDescriptionStyle()}>
+        //             <img className="project-image" src={imgSrc(selected)} alt={selected.image.alt} />
+        //             {selected.skills? <p className="skills">Skills: {selected.skills}</p>: null}
+        //             <p className="project-description">{selected.description}</p>
+        //             {selected.skillsDescription? <p className="skillsDescription">{selected.skillsDescription}</p>: null}
+        //             <a href={selected.link} target="_blank" rel="noopener noreferrer">
+        //                 <button></button>
+        //             </a> 
+        //         </div>
+                    
+        //     );
+        // } 
+    }
+
+    // const handleUnclick = (e) => {
+    //     if (e.target.className !== "project-title") {
+    //         setSelected("")
+    //     }
+    // }
 
     const countBorder = (idx) => {
         if (idx === 0) {
@@ -116,7 +172,7 @@ export default ({data, ...props}) => {
     }
  
     return (
-        <section className="project-list" onClick={(e) => handleUnclick(e)}>
+        <section className="project-list">
             <h3>{data.title}</h3>
             <p className="project-description">{data.description} </p>
             <div className="project-list-grid" >
@@ -127,11 +183,11 @@ export default ({data, ...props}) => {
                             )
                         })}
                 </div>
-                <div className="project-list-description" style={hoverDescriptionStyle()}>
+                
                     {/* { seleted !== "" ? <a href={selected.link} target="_blank"><img className="project-image" src={selected.image.src} alt={selected.image.alt} /> </a> : null }
                     <p className="project-descrition">{selected.description}</p> */}
                     {show()}
-                </div>
+                
             </div>
         </section>
     );
