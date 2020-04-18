@@ -109,23 +109,31 @@ console.log(type)
                     rel="noopener noreferrer"
                     target="_blank"
                     color={style.color}
-                    
                     basic
-                    
                     size="huge"
                 >
                     <Icon name={style.icon} />
                     {style.text}
                 </Button>
+                {/* <a href={type.link}
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    <button
+                    className="project-description-btn"
+                    >
+                    <Icon name={style.icon} />
+                    {style.text}
+                    </button>
+                </a> */}
                 <div className="project-description-p-container">
-                    <div>
+                    <div >
                         <label>Skills </label><br/><p className="skills">{type.skills}</p> 
                     </div>
-                    <div>
+                    <div >
                         <label>Project Description</label><br/> <p className="project-description">{type.description}</p>
                     </div>
                     <div>
-                        <label>Code Description</label><br/> <p className="skillsDescription">{type.skillsDescription}</p>
+                        <label>Code Description</label><br/> <p className="skills-description">{type.skillsDescription}</p>
                     </div>  
                 </div>              
             </div>
