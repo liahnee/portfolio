@@ -20,7 +20,7 @@ const imagesSecondRow = [ { bgImage: ImgShells, text: 'Now I code and paint.', a
 
 export default () => {
 	return (
-		<div className="about" style={{zIndex:"6"}}>
+		<div className="about">
 			<div
 				className="BWdivider"
 				style={{

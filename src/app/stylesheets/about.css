@@ -5,6 +5,7 @@
     font-size: 40px;
     /* background-color: white; */
     position: relative;
+    z-index: 6;
 }
 
 .about h2 {

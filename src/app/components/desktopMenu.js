@@ -13,9 +13,9 @@ export default (props) => {
 	return (
 		<React.Fragment>
 			{redirect ? <Redirect to={'/home'} /> : null}
-
+			<img id="nav-logo" src={Logo} onClick={() => handleHome()} />
 			<nav className="menuBar">
-				<img id="nav-logo" src={Logo} onClick={() => handleHome()} />
+				
 				<div id="nav-btn-container">
 					
 					{props.navItems.map((item, idx) => (
