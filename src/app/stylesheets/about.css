@@ -1,5 +1,5 @@
 .about {
-    min-height: 80vh;
+    min-height: 100vh;
     color: white;
     font-family: 'Merienda One', cursive;
     font-size: 40px;
@@ -13,9 +13,19 @@
     font-family: 'Merienda One', cursive;
     font-size: 3rem;
     margin: 0;
-    padding-top: 15rem;
-    padding-bottom: 5rem;
     background-color: black;
+}
+
+#intro-row {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+#image-row {
+
+}
+#end-row {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 #about-grid {

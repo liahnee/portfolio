@@ -30,14 +30,14 @@ export default () => {
 					height: '18rem'
 				}}
 			/>
-			<h2>I used to...</h2>
+			
 			<Grid
 				id="about-grid"
 				columns={3}
 				centered
 				stackable
 				style={{
-					minHeight: '100vh',
+					minHeight: '80vh',
 					justifyContent: 'center',
 					background: 'white',
 					marginTop: '0',
@@ -46,7 +46,10 @@ export default () => {
 					backgroundColor: 'black'
 				}}
 			>
-				<Grid.Row style={{ marginTop: '20vh' }}>
+				<Grid.Row id="intro-row">
+					<h2>I used to...</h2>
+				</Grid.Row>
+				<Grid.Row id="image-row">
 					{imagesFirstRow.map((item, idx) => (
 						<div key={idx} >
 							<Grid.Column style={{ padding: '10px' }}>
@@ -64,17 +67,17 @@ export default () => {
 						</div>
 					))}
 				</Grid.Row>
-				<Grid.Row>
+				<Grid.Row id="end-row">
 					{imagesSecondRow.map((item, idx) => (
 						<div key={idx}>
-							<Grid.Column style={{ padding: '20vh' }}>
+							<Grid.Column >
 								<br />
 								<p style={{ padding: ' 15px 0 10vh 0' }}>{item.text}</p>
 							</Grid.Column>
 						</div>
 					))}
 				</Grid.Row>
-				<Grid.Row />
+				
 			</Grid>
 			<div
 				className="BWdivider"

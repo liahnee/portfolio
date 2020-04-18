@@ -8,11 +8,7 @@ a {
 
 #projects h3 {
     font-size: 2rem;
-    padding: 0 1rem 0 1rem;
-}
-
-#projects p {
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0;
 }
 
 .project-list {
@@ -37,6 +33,10 @@ a {
 .project-description {
     text-align: left;
     margin: 0 0 2rem 0;     
+}
+
+.project-description p {
+    padding: 0;
 }
 
 @media (max-width: 800px) {
@@ -86,18 +86,15 @@ a {
     max-width: calc((80vw - 20rem) * 0.75);
 }
 
-.project-list-description:hover img {
-    max-width: calc((80vw - 20rem) * 0.76);
-}
-
 .project-description-btn {
     width: 80%;
     margin: 0 auto !important;
+    /* height */
 }
 
 .project-description-btn:hover {
-    width: 80%;
-}
+    box-shadow: 1px 5px 10px 5px pink inset !important;
+} 
 
 
 @media (max-width: 800px) {
@@ -115,10 +112,15 @@ a {
         margin: 1rem auto;
     }
 
-    .project-description-btn {
-        max-width: 60vw;
+    .project-description {
+        padding: 0 0.5rem 0 0.5rem;
     }
-    .project-list-description:hover img {
+
+    #projects h3 {
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .project-description-btn {
         max-width: 60vw;
     }
 }
@@ -131,7 +133,7 @@ a {
 
 .project-list-description p {
     /* border-top: 1px solid; */
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 0 1rem 0;
     width: 100%;
     margin: 0;
     font-weight: strong;
@@ -175,9 +177,6 @@ a {
         max-width: 80%;
     }
 
-    .project-list-description:hover img {
-        max-width: 80%;
-    }
 /* 
     .project-description-btn {
         width: 100%;
