@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Image, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 import '../stylesheets/menuBar.css';
@@ -13,7 +13,7 @@ export default (props) => {
 	return (
 		<React.Fragment>
 			{redirect ? <Redirect to={'/home'} /> : null}
-			<img id="nav-logo" src={Logo} onClick={() => handleHome()} />
+			<img id="nav-logo" alt="logo image" src={Logo} onClick={() => handleHome()} />
 			<nav className="menuBar">
 				
 				<div id="nav-btn-container">
