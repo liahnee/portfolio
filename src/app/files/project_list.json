@@ -4,7 +4,7 @@
         "description": "The following projects are full-stack apps with Javascript, React and/or Ruby. Each front-end of the projects focuses on utilizing different skill sets. Back-ends are built with JWT, REST API, SQL and/or ActiveRecord.  ",
         "lists": [{
             "title": "Web Health Record",
-            "skills": "React, Redux, JWT, Semantic UI, Ruby on Rails, ActiveRecord, REST API, SQL, Trello",
+            "skills": "React, Redux, JWT, Semantic UI, Ruby on Rails, ActiveRecord, REST API, PostgreSQL, Trello(Kanban-style), MVC model",
             "description": "This project was built to mock a patient chart used in the primary care clinics. Users can create multiple patient profiles, their chief complaints, and visit chart for each complaint.",
             "skillsDescription": "The skill sets exercised with this project was implementing JWT and Redux for the React front-end and Ruby on Rails backend. Redux was used for the scalability of the app. Data massaging was also done for diagnosis which searches on ICD11 API.",
             "image": {"src": "WHR", "alt":"WHR page preview"},
@@ -12,7 +12,7 @@
             "type": "github"
         },{
             "title": "Sentimental Tweet",
-            "skills": "React, Semantic UI, Ruby on Rails, ActiveRecord, REST API, SQL, GitHub, Communication, Teamwork",
+            "skills": "React, Semantic UI, Ruby on Rails, ActiveRecord, REST API, SQL, GitHub, Communication, Teamwork, MVC",
             "description": "This app calls on Tweeter API and runs sentiment API on their most recent tweets. Users can log in to create favorites and observe trends on their Tweet sentiment.",
             "skillsDescription": "This was a team project where I took a lead on the front-end. Using React and Semantic UI, I designed a thoughtful and seamless UI/UX designs.",
             "image": {"src": "ST", "alt":"Sentimental Tweet page preview"},
@@ -20,7 +20,7 @@
             "type": "github"
         },{
             "title": "Grow a Tree",
-            "skills": "Javascript, CSS3, Ruby on Rails, ActiveRecord, REST API, SQL, GitHub",
+            "skills": "Javascript, CSS3, Ruby on Rails, ActiveRecord, REST API, SQL, GitHub, MVC",
             "description": "Users can select a random seed and watch it grow into different a tree as it is watered.",
             "skillsDescription": "The focus of the project was using vanilla CSS and vanilla JS with RESTFUL API and respond accordingly with different data sent from the backend.",
             "image": {"src": "Tree", "alt":"Grow a Tree page preview"},
@@ -28,11 +28,19 @@
             "type": "github"
         },{
             "title": "Adopt a Child",
-            "skills": "Ruby, ERB, CSS3, Ruby on Rails, ActiveRecord, REST API, SQL",
+            "skills": "Ruby, ERB, CSS3, Ruby on Rails, ActiveRecord, REST API, SQL, MVC",
             "description": "This is a game app where a user can adopt a child of random stats and gender. Users can create a schedule for the child and how each schedule affected the child's status to figure out their characteristics.",
             "skillsDescription": "This project was entirely Ruby on Rails for the front and the back-end. This project has many backend calculations and conditions for a different set of characteristics the data holds for rendering and carrying out new calculations. Vanilla CSS was used for UI.",
             "image": {"src": "AC", "alt":"Adopt a Child page preview"},
             "link": "https://github.com/liahnee/child_rails_mod2",
+            "type": "github"
+        },{
+            "title": "Schedule an Exam",
+            "skills": "CFML, Coldbox, MySQL, MVC",
+            "description": "Scheduler can select and exam, which will dynamically fetch the available dates and testing centers for the selected option. Receipt number is auto generated and scheduler is redirected to a confirmation page with saved data on submit.",
+            "skillsDescription": "Coldfusion markup language, CFML, was a new language for me to try writing an app with. By using coldbox framework, I was able to create a backend with MVC model.",
+            "image": {"src": "SE", "alt":"Schedule an Exam page preview"},
+            "link": "https://github.com/liahnee/ntn-takehome",
             "type": "github"
         }]
     },

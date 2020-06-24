@@ -10,6 +10,7 @@ import WHR from '../assets/whr_front.png';
 import AC from '../assets/adopt.png';
 import Tree from '../assets/tree.png';
 import ST from '../assets/sentT.png';
+import SE from '../assets/SE.png';
 import { Button, Icon } from 'semantic-ui-react';
 
 export default ({data, ...props}) => {
@@ -76,6 +77,8 @@ export default ({data, ...props}) => {
                 return Tree;
             case 'ST':
                 return ST;
+            case 'SE':
+                return SE;
             default:
                 return null;
         }
