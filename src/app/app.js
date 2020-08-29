@@ -20,6 +20,7 @@ const navItems = [
 ];
 
 export default function App() {
+	const [ visible, setVisible] = useState(false);
 	const handleMobileMenu = (text) => {
 		setVisible(false);
 	}
