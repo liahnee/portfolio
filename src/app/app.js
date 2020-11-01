@@ -11,7 +11,7 @@ import Projects from './containers/projects2';
 import BottomDiv from './components/bottomDiv';
 
 const navItems = [
-	{ path: 'https://drive.google.com/file/d/1vxbaEq6k9qG_oiPPLOSGrq59DAoN1My7/view?usp=sharing', icon: 'file outline', text: 'Resume' },
+	{ path: 'https://docs.google.com/document/d/1h0HxFdo_PErk867AfxiVurQHdAbUR3onsHLhpepIT28/edit?usp=sharing', icon: 'file outline', text: 'Resume' },
 	{ path: 'https://www.linkedin.com/in/catherine-yang-0ab40b3a/', icon: 'linkedin', text: 'LinkedIn' },
 	{ path: "https://codepen.io/liahnee", icon: 'codepen', text: 'CodePen' },
 	{ path: 'https://github.com/liahnee', icon: 'github alternate', text: 'Github' },
