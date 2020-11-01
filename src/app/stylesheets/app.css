@@ -21,6 +21,23 @@ html, body {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .mobile-only {
+        display: block;
+    }
+    .computer-only {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .mobile-only {
+        display: none;
+    }
+    .computer-only {
+        display: block;
+    }
+}
 #pusher {
     min-height: 100vh;
 }

@@ -68,7 +68,7 @@
     margin-bottom: 0 !important;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .BWdivider {
         background-size: 1000% 100% !important;
     }

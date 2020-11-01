@@ -11,7 +11,7 @@ export default (props) => {
 		setRedirect(true);
 	}
 	return (
-		<React.Fragment>
+		<div className="computer-only">
 			{redirect ? <Redirect to={'/home'} /> : null}
 			<img id="nav-logo" alt="logo image" src={Logo} onClick={() => handleHome()} />
 			<nav className="menuBar">
@@ -29,6 +29,6 @@ export default (props) => {
 					
 				 </div>
 			</nav>
-		</React.Fragment>
+		</div>
 	);
 };

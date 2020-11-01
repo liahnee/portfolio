@@ -20,23 +20,14 @@ const navItems = [
 ];
 
 export default function App() {
-	const [ visible, setVisible ] = useState(false);
-	const [ isMobile, setIsMobile ] = useState(false);
-
-	useEffect(() => {
-		if (window.matchMedia('(max-width: 800px)').matches) {
-			setIsMobile(true);
-		} else {
-			setIsMobile(false);
-		}
-	}, []);
+	const [ visible, setVisible] = useState(false);
 	const handleMobileMenu = (text) => {
 		setVisible(false);
 	}
 
 	return (
 		<div className="app">
-			{isMobile ? (
+			<DesktopMenu navItems={navItems} />
 				<Sidebar.Pushable>
 					<Sidebar
 						as={Menu}
@@ -60,23 +51,13 @@ export default function App() {
 					</Sidebar>
 
 					<Sidebar.Pusher dimmed={visible} id="pusher">
-						<Button circular icon="user outline" onClick={() => setVisible(true)} id="stickyBtn" />
+						<Button circular icon="user outline" onClick={() => setVisible(true)} id="stickyBtn" className="mobile-only" />
 						<Home />
 						<About />
 						<Projects />
 						<BottomDiv />
 					</Sidebar.Pusher>
 				</Sidebar.Pushable>
-			) : (
-				<React.Fragment>
-					<DesktopMenu navItems={navItems} />
-					<Home />
-					<About />
-					<Projects />
-					<BottomDiv />
-				</React.Fragment>
-			)}
-			
 		</div>
 	);
 }
