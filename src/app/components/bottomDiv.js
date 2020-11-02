@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from 'semantic-ui-react';
 
+const resume = 'https://docs.google.com/document/d/1h0HxFdo_PErk867AfxiVurQHdAbUR3onsHLhpepIT28/edit?usp=sharing';
+
 export default () => {
 
 	return (
@@ -21,7 +23,7 @@ export default () => {
 					<Button	
 						className="bottom-nav-btn"
 						as="a"
-						href="https://drive.google.com/file/d/12ybEM-bOMxlBCbCgY3kgJbXfaGAuc8jp/view?usp=sharing"
+						href={resume}
 						rel="noopener noreferrer"
 						target="_blank"
 						color="olive"
