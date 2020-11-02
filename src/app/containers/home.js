@@ -27,7 +27,7 @@ export default (props) => {
 					Hello, {isMobile ? null : <br />} I'm {isMobile? <br /> : null } Catherine Yang.
 				</Header>
 				<p id="home-intro" >
-					I enjoy being creative with Javascript and oil paints. <br />
+					I enjoy being creative with React, RoR, and oil paints. <br />
 					(Separately!)
 				</p>
 			</div>
