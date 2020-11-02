@@ -1,8 +1,17 @@
 {
     "fullStack": {
         "title": "React, Javascript, Ruby on Rails",
-        "description": "The following projects are full-stack apps with Javascript, React and/or Ruby. Each front-end of the projects focuses on utilizing different skill sets. Back-ends are built with JWT, REST API, SQL and/or ActiveRecord.  ",
+        "description": "The following projects are web apps with Javascript, React and/or Ruby. Each front-end of the projects focuses on utilizing different skill sets. Back-ends are built with JWT, REST API, SQL and/or ActiveRecord.  ",
         "lists": [{
+            "title": "Trivia Web Application",
+            "skills": "React, Jest, unit test/component test, Sass",
+            "description": "A trivia web application built for Tandem code challenge. The user can answer through set of 10 questions which are randomly selected from a JSON file. User can click through answer choices are having access to current score. Review of previous and new round button are offered on completing 10 questions.",
+            "skillsDescription": "This app practices front-end skills with React. It includes React tests for each component and container. This app parses through provided JSON file. Since this is a simple app, state management was done through useState.",
+            "image": {"src": "TT", "alt": "Start page of a trivia web app"},
+
+            "link": "https://github.com/liahnee/tandem-trivia",
+            "type": "github"
+        },{
             "title": "Web Health Record",
             "skills": "React, Redux, JWT, Semantic UI, Ruby on Rails, ActiveRecord, REST API, PostgreSQL, Trello(Kanban-style), MVC model",
             "description": "This project was built to mock a patient chart used in the primary care clinics. Users can create multiple patient profiles, their chief complaints, and visit chart for each complaint.",
@@ -46,7 +55,7 @@
     },
     "frontEnd":{
         "title": "HTML5/CSS3",
-        "description": "The following projects are front-end pages written with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. Clicking on the project image links to the corresponding CodePen page.",
+        "description": "The following projects are practice designs written only with HTML5 and CSS3. The projects focus on enhancing accessibility and utilizing different elements of HTML. Clicking on the project image links to the corresponding CodePen page.",
         "lists": [{
             "title": "Style: Portfolio/Product Landing Page",
             "skills": "HTML5, CSS3",

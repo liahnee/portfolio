@@ -6,6 +6,7 @@ import PDoc from '../assets/preview_doc.png';
 import PSur from '../assets/preview_sur.png';
 import PTri from '../assets/preview_tri.png';
 
+import TT from '../assets/tt_start.png';
 import WHR from '../assets/whr_front.png';
 import AC from '../assets/adopt.png';
 import Tree from '../assets/tree.png';
@@ -15,7 +16,7 @@ import { Button, Icon } from 'semantic-ui-react';
 
 export default ({data, ...props}) => {
     useEffect(() => {
-        let imgList = [PPro, PDoc, PSur, PTri, WHR, AC, Tree, ST];
+        let imgList = [PPro, PDoc, PSur, PTri, TT, WHR, AC, Tree, ST];
         imgList.forEach(i => {
             new Image().src = i;
         });
@@ -79,6 +80,8 @@ export default ({data, ...props}) => {
                 return ST;
             case 'SE':
                 return SE;
+            case 'TT':
+                return TT;
             default:
                 return null;
         }
