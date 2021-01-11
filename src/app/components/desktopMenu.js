@@ -13,21 +13,19 @@ export default (props) => {
 	return (
 		<div className="computer-only">
 			{redirect ? <Redirect to={'/home'} /> : null}
-			<img id="nav-logo" alt="logo image" src={Logo} onClick={() => handleHome()} />
 			<nav className="menuBar">
-				
+				<img id="nav-logo" alt="logo image" src={Logo} onClick={() => handleHome()} />
+
 				<div id="nav-btn-container">
-					
 					{props.navItems.map((item, idx) => (
-						<a href={item.path} target="_blank" rel="noopener noreferrer" key={idx} >
-							<button className="menuItem" >
+						<a href={item.path} target="_blank" rel="noopener noreferrer" key={idx}>
+							<button className="menuItem">
 								<Icon name={item.icon} />
 								{item.text}
 							</button>
 						</a>
 					))}
-					
-				 </div>
+				</div>
 			</nav>
 		</div>
 	);

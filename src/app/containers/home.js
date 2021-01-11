@@ -16,8 +16,7 @@ export default (props) => {
 	}, []);
 
 	return (
-		<div id="home" 
-		>
+		<div id="home">
 			<div id="home-container">
 				<Image id="home-image"  circular size="medium" src={ProfilePic} />
 				<Header

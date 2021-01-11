@@ -19,7 +19,9 @@
     margin: 0;
     padding: 0;
     z-index: 5 !important;
-    /* display: flex; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 
@@ -45,17 +47,19 @@
 }
 
 #nav-btn-container {
-    /* float: right; */
     position: absolute;
     top: 1rem;
     right: 2rem;
     border: none !important;
 }
 
+#nav-logo-container {
+    margin: auto 0 auto 3rem;
+}
+
 #nav-logo {
+    height: 100%;
     width: 5rem;
-    position: absolute;
-    top: 1rem;
-    left: 3rem;
-    z-index: 7;
+    padding: 0;
+    margin-left: 3rem;
 }
