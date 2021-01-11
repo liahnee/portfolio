@@ -3,8 +3,17 @@
         "title": "React, Javascript, Ruby on Rails",
         "description": "The following projects are web apps with Javascript, React and/or Ruby. Each front-end of the projects focuses on utilizing different skill sets. Back-ends are built with JWT, REST API, SQL and/or ActiveRecord.  ",
         "lists": [{
+            "title": "NavigatorCRE Mock Website",
+            "skills": "React, Sass, Responsive Web Design, HTML 5",
+            "description": "A mock website for frontend skills. Focused on responsive design.",
+            "skillsDescription": "This app practices front-end skills with React. Focused on UX/UI design of user navigation throughout the page for each components.",
+            "image": {"src": "CRE", "alt": "Start page of NavigatorCRE mock website"},
+
+            "link": "https://github.com/liahnee/tandem-trivia",
+            "type": "github"
+        },{
             "title": "Trivia Web Application",
-            "skills": "React, Jest, unit test/component test, Sass",
+            "skills": "React, Jest, unit test/component test, Sass, Responsive Web Design",
             "description": "A trivia web application built for Tandem code challenge. The user can answer through set of 10 questions which are randomly selected from a JSON file. User can click through answer choices are having access to current score. Review of previous and new round button are offered on completing 10 questions.",
             "skillsDescription": "This app practices front-end skills with React. It includes React tests for each component and container. This app parses through provided JSON file. Since this is a simple app, state management was done through useState.",
             "image": {"src": "TT", "alt": "Start page of a trivia web app"},
