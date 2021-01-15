@@ -9,7 +9,7 @@
             "skillsDescription": "This app practices front-end skills with React. Focused on UX/UI design of user navigation throughout the page for each components.",
             "image": {"src": "CRE", "alt": "Start page of NavigatorCRE mock website"},
 
-            "link": "https://github.com/liahnee/tandem-trivia",
+            "link": "https://github.com/liahnee/navcre",
             "type": "github"
         },{
             "title": "Trivia Web Application",
