@@ -109,8 +109,10 @@ console.log(type)
         let style = btn(type.type)
         return (
             <div className="project-list-description" style={hoverDescriptionStyle()}>
-                
+                <a href={type["live-link"]} target="_blank" rel="noopener noreferrer" >
                 <img className="project-image" src={imgSrc(type)} alt={type.image.alt} />
+
+                </a>
                 <Button
                     className="project-description-btn"
                     as="a"

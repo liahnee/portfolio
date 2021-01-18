@@ -8,7 +8,7 @@
             "description": "A mock website for frontend skills. Focused on responsive design.",
             "skillsDescription": "This app practices front-end skills with React. Focused on UX/UI design of user navigation throughout the page for each components.",
             "image": {"src": "CRE", "alt": "Start page of NavigatorCRE mock website"},
-
+            "live-link": "https://navcre-code-challenge.netlify.app/",
             "link": "https://github.com/liahnee/navcre",
             "type": "github"
         },{
@@ -17,8 +17,8 @@
             "description": "A trivia web application built for Tandem code challenge. The user can answer through set of 10 questions which are randomly selected from a JSON file. User can click through answer choices are having access to current score. Review of previous and new round button are offered on completing 10 questions.",
             "skillsDescription": "This app practices front-end skills with React. It includes React tests for each component and container. This app parses through provided JSON file. Since this is a simple app, state management was done through useState.",
             "image": {"src": "TT", "alt": "Start page of a trivia web app"},
-
             "link": "https://github.com/liahnee/tandem-trivia",
+            "live-link": "https://trivia-for-tandem.netlify.app/",
             "type": "github"
         },{
             "title": "Web Health Record",
@@ -27,6 +27,14 @@
             "skillsDescription": "The skill sets exercised with this project was implementing JWT and Redux for the React front-end and Ruby on Rails backend. Redux was used for the scalability of the app. Data massaging was also done for diagnosis which searches on ICD11 API.",
             "image": {"src": "WHR", "alt":"WHR page preview"},
             "link": "https://github.com/liahnee/whr_frontend",
+            "type": "github"
+        },{
+            "title": "Schedule an Exam",
+            "skills": "CFML, Coldbox, MySQL, MVC",
+            "description": "Scheduler can select and exam, which will dynamically fetch the available dates and testing centers for the selected option. Receipt number is auto generated and scheduler is redirected to a confirmation page with saved data on submit.",
+            "skillsDescription": "Coldfusion markup language, CFML, was a new language for me to try writing an app with. By using coldbox framework, I was able to create a backend with MVC model.",
+            "image": {"src": "SE", "alt":"Schedule an Exam page preview"},
+            "link": "https://github.com/liahnee/ntn-takehome",
             "type": "github"
         },{
             "title": "Sentimental Tweet",
@@ -51,14 +59,6 @@
             "skillsDescription": "This project was entirely Ruby on Rails for the front and the back-end. This project has many backend calculations and conditions for a different set of characteristics the data holds for rendering and carrying out new calculations. Vanilla CSS was used for UI.",
             "image": {"src": "AC", "alt":"Adopt a Child page preview"},
             "link": "https://github.com/liahnee/child_rails_mod2",
-            "type": "github"
-        },{
-            "title": "Schedule an Exam",
-            "skills": "CFML, Coldbox, MySQL, MVC",
-            "description": "Scheduler can select and exam, which will dynamically fetch the available dates and testing centers for the selected option. Receipt number is auto generated and scheduler is redirected to a confirmation page with saved data on submit.",
-            "skillsDescription": "Coldfusion markup language, CFML, was a new language for me to try writing an app with. By using coldbox framework, I was able to create a backend with MVC model.",
-            "image": {"src": "SE", "alt":"Schedule an Exam page preview"},
-            "link": "https://github.com/liahnee/ntn-takehome",
             "type": "github"
         }]
     },
