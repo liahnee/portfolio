@@ -74,6 +74,11 @@ a {
     overflow: auto;
 }
 
+
+.project-list-description > a {
+    display: flex;
+}
+
 .project-list-description label {
     font-size: 1.2em;
     padding: 1rem 0 0.5rem 0;
